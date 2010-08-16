@@ -13,39 +13,91 @@ sub BUILDARGS {
     my ( $class, $c, @args ) = @_;
 
     my $filter_args = { @args };
-
+    $class->SUPER::BUILDARGS(@_);
 	return { %$filter_args, context => $c, filter_args => $filter_args };
 }
 
+has context => (
+	isa => "Object",
+	is  => "ro",
+);
 
-sub init {
+has filter_obj => (
+	isa => "Object",
+	is  => "ro",
+	lazy_build => 1,
+);
+
+has filter_args => (
+	isa => "HashRef",
+	is  => "ro",
+	default => sub { {} },
+);
+
+sub _build_filter_obj {
+	my $self = shift;
+
+    my $tree = HTML::TreeBuilder->new();
+
+    my $default_args = {
+        implicit_tags => 0,
+        implicit_body_p_tag => 0,
+        ignore_unknown => 0,
+        ignore_ignorable_whitespace => 1,
+        no_space_compacting => 0,
+        store_comments => 1,
+    };
+
+	my $args = $self->filter_args;
+
+	for my $method (keys %$default_args, %$args) {
+		if ( $tree->can($method) ) {
+			$tree->$method( $args->{$method} );
+		}
+	}
+
+	return $tree;
+}
+
+# sub BUILD {
+	# my $self = shift;
+    # $self->context->install_filter('add_ids');
+# }
+
+
+before init => sub { warn "\n\n###### init #####\n\n" };
+
+after init => sub {
     my $self = shift;
 
-    $self->install_filter('add_ids');
+    $self->{ _DYNAMIC } = 1;
+    $self->context->install_filter('add_ids');
 
     return $self;
-}
+};
+
+after new => sub {
+    my $self = shift;
+    $self->SUPER::new(@_);
+};
 
 sub filter {
     my ($self, $text) = @_;
 
-    $text = _add_ids($text);
+    $text = $self->_add_ids($text);
 
     return $text;
 }
 
 sub _add_ids {
+    my $self = shift;
     my $content = shift;
     my $content_sha1 = sha1_hex($content);
-    $content = qq(<div id="_modified_content_root" class="$content_sha1">$content</div>); # Show that we have
 
-    my $tree = HTML::TreeBuilder->new();
-    $tree->implicit_tags(0);
-    $tree->implicit_body_p_tag(0);
-    $tree->ignore_unknown(0);
-    $tree->ignore_ignorable_whitespace(1);
-    $tree->no_space_compacting(0);
-    $tree->store_comments(1);
+    # FIXME: Stupid hack to show that we have a specific content
+    $content = qq(<div id="$content_sha1">$content</div>);
+
+    my $tree = $self->filter_obj;
 
     $tree->parse($content);
     $tree->eof();
