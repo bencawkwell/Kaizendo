@@ -1,10 +1,19 @@
 #!env sh
 #
 # Testbed for figuring out the comments data
-# Using YAML::Shell for testing purposes
+# Using YAML::Shell for dumping the Perl datastructure
+# of the YAML file
 
 ysh -r < example_discussion.yml
 
 # Using JSON::XS for converting from YAML to JSON
 
-test $? = 0 && json_xs -f yaml -t json < example_discussion.yml > example_discussion.json
+test $? = 0 && json_xs -f yaml -t json \
+   < example_discussion.yml \
+   > example_discussion.json
+
+ysh -r < comment_list.yml
+
+test $? = 0 && json_xs -f yaml -t json \
+   < comment_list.yml \
+   > comment_list.json

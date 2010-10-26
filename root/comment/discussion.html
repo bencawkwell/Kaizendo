@@ -3,11 +3,10 @@
   USE JSON;
   json = INSERT sandbox/example_discussion.json;
   discussion_data = JSON.json_decode(json);
+  discussion = discussion_data.context.thread;
+  discussion_id = discussion_data.context.id;
   depth = 0;
 %]
-
-<!-- Templated created with the following Zen Code:
-ol.discussion>li#c_>div.comment{[% INCLUDE comment/content.html title="Comment" content='Oh noes' %]} ol>li#c_>div.comment{[% INCLUDE comment/content.html title="Reply" content="I can haz cheezburger" %] -->
 
 [% BLOCK new_discussion %]
 <ol class="discussion depth_1">

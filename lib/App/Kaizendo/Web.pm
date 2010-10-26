@@ -37,9 +37,19 @@ __PACKAGE__->config(
 
     # Disable deprecated behavior needed by old applications
     disable_component_resolution_regex_fallback => 1,
+
+    # Enable logging of static files
+    static => {
+      logging => 1,
+    },
     
     # Set up DSN for the Model
     'Model::Projects' => {
+        dsn => "dbi:SQLite:dbname=" . __PACKAGE__->path_to('kiokudb.sqlite3'),
+    },
+
+    # Set up DSN for the comments
+    'Model::Comments' => {
         dsn => "dbi:SQLite:dbname=" . __PACKAGE__->path_to('kiokudb.sqlite3'),
     },
 );

@@ -1,0 +1,62 @@
+# This is the original the JSON file is generated from. See README.
+---
+context:
+  id: '91af795a'
+  url: '/IHE/1/'
+  discussions:
+    -
+      id: '8b106f26'
+      location:
+        start_path: '/div/p:[1]'
+        start_offset: 31
+        end_path: '/div/p:[1]'
+        end_offset: 68
+        child_paths: []
+      author:
+        url: /_user/ben
+        name: Ben Cawkwell
+        id: ben
+      published: '2010-03-19T17:26:59'
+      subject: 'Need to be more explicit about what expansive thinking is'
+    -
+      id: 'c8f645b8'
+      location:
+        start_path: '/div/p:[1]'
+        start_offset: 62
+        end_path: '/div/p:[1]'
+        end_offset: 119
+        child_paths: []
+      author:
+        url: /_user/sjn
+        name: Salve J. Nilsen
+        id: sjn
+      published: '2010-06-19T17:26:59'
+      subject: 'These dates are wrong'
+    -
+      id: 'fb004ab2'
+      location:
+        start_path: '/div/p:[1]'
+        start_offset: 62
+        end_path: '/div/p:[1]'
+        end_offset: 119
+        child_paths: []
+      author:
+        url: /_user/bob
+        name: Bob Builder
+        id: bob
+      published: '2010-08-02T19:01:51'
+      subject: 'Is this the correct way to write 1900s and 2000s?'
+    -
+      id: 'c8f645b8'
+      location:
+        start_path: '/div/p[2]:[1]'
+        start_offset: 278
+        end_path: '/div/p[2]:[1]'
+        end_offset: 292
+        child_paths: []
+      author:
+        url: /_user/sloath
+        name: S. Loather
+        id: sloath
+      published: '2010-06-19T17:26:59'
+      subject: "This is making an assumption"

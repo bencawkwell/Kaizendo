@@ -1,0 +1,1240 @@
+<div id="what-to-avoid--known-problems-and-failures">
+  <h1>9. What To Avoid--Known Problems and Failures</h1>
+
+  <p>As you work to move your project forward, it is inevitable
+  that you will make some mistakes. How you respond to them can be
+  critical to your project's success. If you are honest with your
+  community about what was done and take steps to correct matters,
+  then your project can move forward with strengthened mutual
+  respect between you and your community. If you refuse to admit
+  that there is a problem or ignore the wishes of your community
+  members, then they will have less trust in you and your
+  intentions. This is especially critical for large companies,
+  because outside developers often start off with a low level of
+  trust concerning the company's motives. Any act that reinforces
+  their fears hurts your project's chances of success. When your
+  actions demonstrate your respect for your community members'
+  opinions, you earn their trust and improve the chances of your
+  project recovering from any future problems.</p>
+
+  <p>In this section, we look at some problems that can cause
+  open-source projects to stumble. We hope that by being aware of
+  them you can avoid them in your project.</p>
+
+  <div id="not-understanding-open-source">
+    <h2>Not Understanding Open Source</h2>
+
+    <p>The first problems can arise when people making decisions
+    about whether to use open source for a project do not
+    understand how open source works. A typical failure is for
+    decision makers to not believe the philosophical tenets of open
+    source (see <sup><a href="#fn1" class="footnoteRef" id="fnref1"
+    name="fnref1">1</a></sup></p>
+
+    <p>The reality is that even under a strong open-source license
+    such as the GPL only the actual source code of the application
+    is affected. Other open-source licenses, such as the LGPL,
+    Mozilla, and BSD, make it easy to combine proprietary and
+    open-source code. There are real issues about what IP an
+    open-source project will share, but they are not as horrific or
+    all-devouring as people uninformed on the details of open
+    source might fear. Note that because open-source licenses have
+    yet to be thoroughly tested in court, lawyers are prone to be
+    overly cautious when they first read an open-source
+    license.</p>
+
+    <p>Many people believe that the point of doing open source is
+    to get hundreds of outside developers to work for them for
+    free. When this doesn't happen--and it almost certainly
+    won't--they declare the project a failure. Moreover, managers
+    who believe that open source is just a way to cut costs may not
+    allocate sufficient resources to the project--starving it to
+    death.</p>
+
+    <p>A related misconception is that you will get hundreds of
+    developers contributing lots of random low-quality code that
+    you will somehow need to deal with. This just doesn't happen.
+    If you are lucky, you might get a number of outside developers
+    experimenting with your source code trying to fix bugs or make
+    improvements, but you will never hear from most of them. Like
+    most people, developers do not want to appear foolish in a
+    public forum. If they think that their potential contributions
+    are not so great, they will most likely never show them to
+    anyone. In fact, your problem is more apt to be the opposite:
+    trying to convince potential contributors to submit code that
+    they feel is less than perfect.</p>
+
+    <p>A common mistake is believing that a company can open source
+    a project to get good PR while playing the same old proprietary
+    game. The outside world will quickly see this for the sham it
+    is, and no one will join the project. Doing an open-source
+    project for the wrong reasons will probably get you a lot of
+    bad press coverage and alienate outside developers.</p>
+
+    <p>A different type of problem is starting to occur as more
+    people learn about open source: People sometimes believe that
+    any open-source project they create must work exactly the same
+    way as an existing open-source project. Projects such as
+    Apache, Mozilla, and Linux are being held up as exemplars of
+    the only way to run an open-source project. Although it is
+    important to learn from successful open-source projects, we are
+    still just beginning to understand the landscape of open
+    source. To succeed requires adopting an open-source attitude
+    and innovating new ways to do things.</p>
+
+    <p>Another mistake is not understanding that starting an
+    open-source project is like launching a new product. They have
+    similar life-cycle issues, the most important being that
+    neither can be ended abruptly without upsetting your customers,
+    which includes the community in the case of an open-source
+    project. Open-source projects, like products, require an
+    end-of-life plan. For more details, please refer to the section
+    on <a href="IHE-56.html#92889">Ending an Open-Source
+    Project</a> in Chapter 6.</p>
+  </div>
+
+  <div id="dont-needlessly-duplicate-an-existing-effort">
+    <h2>Don't Needlessly Duplicate an Existing Effort</h2>
+
+    <p>In pure voluntary open source, there generally will be only
+    one open-source project in a given area. Innovation and
+    invention are still possible, but the open-source philosophy
+    is, as much as possible, to resist diversity and instead to
+    press forward with a single solution with maximum effort. The
+    few instances where there are two open-source projects trying
+    to produce similar results are due to political issues: GNOME
+    happened because of unhappiness with the license used by KDE,
+    XEmacs came about because of a disagreement over how to add
+    display support to Emacs, and Linux started up while AT&amp;T
+    was battling legally with Berkeley over BSD.</p>
+
+    <p>There are only so many open-source developers interested in
+    a given area, and it is hard enough to create one community of
+    them, let alone two. So if there is already an open-source
+    project with goals similar to yours, then you should endeavor
+    to join that project. If there is some very good reason why you
+    cannot join with them--and it had better be an extremely
+    compelling reason, such as they are using GPL and your business
+    aim is to produce a proprietary version--then you should
+    rethink whether you should be doing open source at all.</p>
+
+    <p>Sometimes diversity is what's needed. If you decide to start
+    a project building something with the same basic intent as an
+    existing open-source project, you need to understand that you
+    will get fewer volunteers and that the differences must be
+    clear and distinct. Over time, you might convince people that
+    your differences are worthwhile and thereby attract more
+    developers and users; and over the very long run you might be
+    in a position to merge back with the original open-source
+    project once the relative importance and attractiveness of the
+    different design and implementation decisions become clear
+    through use.</p>
+
+    <p>The story of XEmacs is illustrative here because it is
+    perhaps the first instance of a commercial company working on
+    free or open source as part of a business strategy, and it was
+    also probably the first and most visible fork of an open code
+    base.</p>
+
+    <p>In 1991, a company named Lucid, Inc.,<sup><a href="#fn2"
+    class="footnoteRef" id="fnref2" name="fnref2">2</a></sup> was
+    working on a product called Energize, which was an integrated
+    development environment (IDE) for C and C++ on Unix. The design
+    of this development environment involved very tight integration
+    among the various tools: compilers, linkers, debuggers,
+    graphers, and editors. The IDE needed a powerful editor to tie
+    the whole thing together, and the Lucid designers chose Emacs.
+    Moreover, the IDE was graphics based: It assumed a window
+    system such as X rather than the character-oriented terminals
+    of the day.</p>
+
+    <p>The then-current version of GNU Emacs from the Free Software
+    Foundation was Emacs 18, which was a terminal-based editor
+    relying on simple character placement for its visual display
+    rather than on a graphics-based environment, which is standard
+    today. At the time, there was another version of GNU Emacs
+    called Epoch that had been developed at NCSA; this was a set of
+    patches to Emacs 18 that gave it much better GUI support.</p>
+
+    <p>Also at that time, the next major release of Emacs, Emacs
+    19, was expected to integrate features from Epoch, but was long
+    overdue. The Epoch maintainers themselves saw Epoch as an
+    interim measure, awaiting the release of Emacs 19.</p>
+
+    <p>The developers at Lucid didn't want to tie themselves to the
+    soon-to-be-obsolete Emacs 18 or to Epoch because those code
+    bases were considered obsolete even by their maintainers. The
+    Lucid developers wanted to use Emacs 19; the idea was that
+    Energize would operate with the off-the-shelf version of Emacs
+    19, which most people would already have installed on their
+    system anyway. In that way, Energize would make use, to some
+    extent, of tools developers already had and were already
+    using.</p>
+
+    <p>But because Emacs 19 wasn't done yet, Lucid decided to
+    provide funding and resources to help get Emacs 19 finished.
+    Many of the Lucid developers were fans of the Free Software
+    Foundation and contributed to free software projects, so all
+    their work on Emacs 19 was released under GPL, and they
+    assigned copyright on all their work back to the Free Software
+    Foundation. Lucid had no proprietary interest in Emacs per
+    se--it was simply a tool that would enhance the value of their
+    proprietary product, and they hoped there would be good PR
+    associated with releasing the GUI-based Emacs when Emacs 19 had
+    been delayed so long. Among the other work Lucid did for Emacs
+    was to produce a user manual, which would be required for the
+    proprietary product.</p>
+
+    <p>Unfortunately, the relationship with the Free Software
+    Foundation broke down, primarily for two reasons:</p>
+
+    <ul>
+      <li>There was a dispute over the design of a hypertextlike
+      addition to Emacs.</li>
+
+      <li>There was a dispute about how display and redisplay could
+      best be done on window systems such as X.</li>
+    </ul>
+
+    <p>Moreover, the Free Software Foundation was not in a position
+    to work as quickly as Lucid needed, so Lucid bundled its work
+    into what became Lucid Emacs and released it as a GPLed
+    open-source editor.</p>
+
+    <p>After Lucid went out of business in 1994 (for unrelated
+    reasons), Lucid Emacs became XEmacs. To this day, XEmacs is
+    about as popular as FSF Emacs because it still provides
+    features and a design that many people find superior to the
+    FSF's version.</p>
+
+    <p>As of fall 2003, the XEmacs project was looking at merging
+    back into FSF Emacs, but there were still too many
+    irreconcilable differences in the way the two projects viewed
+    technical, programming, design, and organizational matters to
+    make a merge possible. Although some commentators consider
+    XEmacs to have been a divisive fork, others consider the
+    competition between the two groups as positive for the rapid
+    advancement of Emacs over the last decade.</p>
+
+    <p>If you decide to start a competing project it is very
+    important that you establish good relations with the developers
+    of the existing project. The last thing you want is to have
+    them bad-mouthing your project on forums such as Slashdot.
+    Also, you probably share many common goals with them and there
+    are apt to be many subprojects you can work on together, such
+    as establishing common file formats.</p>
+
+    <p>There will sometimes be cases where creating a competing
+    open-source effort cannot be avoided. For example, when Sun
+    released their StarOffice code as OpenOffice it overlapped with
+    two existing open-source projects: Gnumerics and AbiWord.
+    StarOffice was an existing proprietary office suite built to
+    compete with Microsoft office. The lead developer for Gnumerics
+    had been engaged in conversations with Sun about this overlap
+    before OpenOffice was announced, and, as a result, he viewed
+    the OpenOffice project in a good light and was receptive to
+    working with Sun. However, no one on the AbiWord project was
+    consulted before or after the OpenOffice announcement; worse,
+    one of the AbiWord developers tried to start a discussion on
+    one of the OpenOffice mailing lists about developing a common
+    XML file format, but never received any replies from the
+    StarOffice engineers. The result was that the AbiWord
+    developers became suspicious of Sun's motives and did not work
+    with Sun, and both efforts are the worse because of this.</p>
+
+    <p>One final point about creating a competing open-source
+    project: Do not expect any people working on existing projects
+    to switch to your project. Your outside contributors will come
+    from people who have not yet gotten involved with either
+    project, and you will be in direct competition with the other
+    project for potential new developers. In the OpenOffice
+    example, none of the Gnumerics or AbiWord developers switched
+    over to work on OpenOffice.</p>
+  </div>
+
+  <div id="licensing-issues">
+    <h2>Licensing Issues</h2>
+
+    <p>The license you choose can create problems if it is
+    unfamiliar to your target audience or inappropriate for your
+    project.</p>
+
+    <p>It is a bad idea to create a new license for your project.
+    There is a set of existing, mature open-source licenses that
+    open-source developers are familiar with, and it is unlikely
+    that your concerns are not addressed by one of them. If people
+    are unfamiliar with a license they tend to be suspicious of it
+    and shy away from the project. When Sun first introduced the
+    Sun Community Source License (SCSL), no one quite knew what to
+    make of it; it was also hard to understand. Using a new license
+    requires taking on a large community education effort--time
+    that might be better spent working on your project.</p>
+
+    <p>The Mozilla project has decided that it wants to be able to
+    engage more with a number of projects that use the GPL. As a
+    result, it is in the messy process of contacting all the people
+    who have ever contributed code to Mozilla to get their
+    permission to multiply license the code under MPL, GPL, and
+    LGPL. This highlights two problems: how letting contributors
+    hold the copyright for their contribution prevents changing
+    licensing terms and how the choice of license can limit who
+    will work on the code.</p>
+
+    <p>Beware of trying to change either the license or the
+    contributor agreement after your project is underway. Sometimes
+    doing this is no problem; for example, OpenOffice changed from
+    requiring contributors to assign copyright of their submissions
+    to Sun to requiring contributors to sign a joint copyright
+    agreement (JCA), which gave contributors more rights and was
+    accepted by the community almost without comment. However, when
+    the NetBeans project, which had not previously required
+    copyright assignment, announced it was adopting the same joint
+    copyright requirement for contributors, several community
+    members complained that Sun was acting unfairly, because it
+    took away the right of exclusive ownership. Had NetBeans
+    started with a JCA, it is likely that the issue would never
+    have arisen. Part of the problem with almost any change you
+    make is that it will act as a lightning rod, opening the door
+    to larger-scale criticism if your community has major
+    unresolved issues with the way you are leading the project.</p>
+
+    <p>In general, when a company sponsoring an open-source project
+    decides to make a major change to the license, the code, the
+    architecture, the community, or anything else visible and
+    important, the outside community will tend to view such
+    decisions with suspicion. It will wonder whether there is some
+    hidden, sinister reason for the change that is not decipherable
+    and hence represents a trap. Therefore, make changes with care
+    and involve the community as early as possible in discussions
+    about important changes.</p>
+  </div>
+
+  <div id="design-issues">
+    <h2>Design Issues</h2>
+
+    <p>Earlier we have mentioned that low-code quality can be an
+    issue. Similarly, a poor or otherwise deficient system design
+    can lead to less success than could be hoped for. In large
+    part, successful open-source projects have been either copies
+    of good designs (Linux, for example) or have been designed by
+    extraordinary designers. In some cases, their work had already
+    been proven in the form of a series of excellent designs, and
+    in others they were new talents in the making.</p>
+
+    <p>A company should think carefully about how good a design it
+    is thinking of offering as an open-source project. In most
+    cases, a company should offer software designed by proven
+    designers or else do a careful design review before releasing
+    the code, followed by revisions if needed.</p>
+
+    <p>An interesting but complex example of this is NetBeans
+    versus Eclipse--this illustrates the design quality issue and
+    also the first-mover myth. NetBeans started as a student
+    project (originally called Xelfi) in the Czech Republic in
+    1996. The goal was to write a Delphi-like Java IDE in Java. A
+    company was formed around this project, called NetBeans. Sun
+    acquired the company in 1999 and soon thereafter open sourced
+    the code. Eclipse was designed and initially implemented by
+    OTI, a Canadian company that had previously been acquired by
+    IBM. OTI had extensive experience developing programming
+    environments. Eclipse was released as open source several years
+    after NetBeans.</p>
+
+    <p>The two designs differ dramatically in maturity and quality.
+    Part of this has to do with the experience levels of the two
+    design groups, but some has to do with when the designs were
+    done and the different knowledge levels--1996 versus 2000 and
+    students versus older professionals. The later Eclipse design
+    has a sophisticated but easy-to-handle plug-in architecture
+    with XML manifests, which reflected the growing use of XML that
+    was apparent to OTI but hidden in the future for the NetBeans
+    student team.</p>
+
+    <p>At this point (spring 2004), Eclipse is regarded as superior
+    and has more mind- and market share, but NetBeans has a
+    considerable following and is making design and architecture
+    changes. Nevertheless, any company would be wise to be sure of
+    the quality and maturity of a design before releasing it.</p>
+  </div>
+
+  <div id="code-issues">
+    <h2>Code Issues</h2>
+
+    <p>One of the first hurdles an open-source project faces is
+    whether the code is complete and builds a working application.
+    The classic complaint about Mozilla in its early days was that
+    the source code Netscape released was incomplete and could not
+    make a working web browser. The Mozilla team was committed to
+    the work, so the project continued. Once a working browser
+    began to emerge, more casual contributors have also been able
+    to participate.</p>
+
+    <p>This is also a common problem for small projects that are
+    started because someone has a cool idea: A group of people may
+    exchange messages about the idea and suggest ways to improve
+    it, but somehow no one ever gets around to writing any code!
+    Remember that open source only works to incrementally improve
+    what's there--if you have only design ideas, then that's what
+    the community will improve. Someone needs to write the code for
+    a minimal but working version before the community will
+    contribute any code.</p>
+
+    <p>A second hurdle is making sure that the user succeeds when
+    trying out your application for the first time. This was a
+    noticeable problem with Jini, not because of a problem with the
+    Jini code but rather because of a problem configuring Windows
+    systems to properly support multicasting. The lesson here is
+    that even though your code is fine, problems with other
+    software may cause your project to suffer. You need to go to
+    some lengths to anticipate initial usage patterns and skill
+    levels of the users when code is released to the community. In
+    the Jini case, it was expected that mostly Solaris users would
+    try out Jini and that any Windows users would be able to figure
+    out how to configure multicast properly. This expectation
+    proved to be false on both counts.</p>
+
+    <p>Another stumbling block occurs when outside developers have
+    trouble navigating the source code. This could be because the
+    code is too difficult to understand (in which case it should be
+    rewritten), there is inadequate system documentation, or the
+    code base is too large. Developers who want to work on the
+    OpenOffice project have a steep learning curve due to the
+    tremendous amount of code involved. This is a particularly
+    common problem as a project moves from being proprietary to
+    open source because of the vastly different levels of developer
+    involvement--even an incredibly well-documented proprietary
+    project still assumes a full-time commitment from a new
+    developer.</p>
+
+    <p>Marc Fleury and Juha Lindfors wrote in &quot;Enabling
+    Component Architectures with JMX&quot; about how modularity
+    increased open-source productivity in the JBoss project:</p>
+
+    <blockquote>
+      <p>Modularity in open source is not just a good idea.
+      Modularity is the only way a project can mature. Successful
+      open source projects are usually measured by the number of
+      people that participate in the development. It is common for
+      very successful teams to have a tightly knit core team of
+      developers working on core functionality, but the key to
+      growing the codebase is to enable lots of developers to work
+      on modules around the core.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>JBoss 1.0 was near completion when the core developers
+      came to a simple conclusion: it was too hard for the casual
+      developer to come in and contribute over the course of a
+      week. One would have to spend at least a week to understand
+      the code before making any contribution. The situation was
+      typical of second generation open source projects: lots of
+      people wanted to participate but very few could actually do
+      so.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>For the third iteration, JBoss embraced JMX. Within a
+      week, an alternate SOAP-based invocation layer was submitted
+      to the JBoss group. Modularity is needed for open source
+      development and management. JMX is a natural way to enforce
+      modularity in a design. The increased productivity and the
+      ease of component integration to the server has made JBoss
+      and JMX a success.<sup><a href="#fn3" class="footnoteRef" id=
+      "fnref3" name="fnref3">3</a></sup></p>
+    </blockquote>
+
+    <p>A related problem cropped up in the JXTA project. The JXTA
+    source code was deliberately released early so that the
+    community could help design it. This led to some developers
+    being confused about which aspects of JXTA were not yet defined
+    and which had just not been documented yet. Once adequate
+    documentation was written that made this clear, the discussion
+    was able to move forward smoothly.</p>
+
+    <p>A different type of problem can happen when a project has a
+    slow release cycle. One way that the outside world judges how
+    well a project is doing is by how long it has been since the
+    last release. If a project goes too long without a release,
+    people will start to consider the project dead or a failure.
+    For example, many people thought that the Mozilla project was
+    in trouble after its first year because no working browser had
+    been released. The frequent releases starting in mid-2001,
+    leading up to version 1.0 in June 2002 and continuing since,
+    have dispelled this feeling and now people outside of the
+    Mozilla project have good evidence that it is alive and making
+    progress.</p>
+
+    <p>If your project has not released anything for a long time,
+    you should consider putting less into your next release and
+    trying to do smaller, more frequent releases. You should also
+    make sure that your project website is updated regularly--a
+    stale website is another indication of a dying or dead
+    project.</p>
+
+    <p>Another potential problem relates to subprojects. As we
+    discussed in the earlier section <sup><a href="#fn4" class=
+    "footnoteRef" id="fnref4" name="fnref4">4</a></sup> For
+    example, as part of the Apache XML Project, the Xerces XML
+    parser appeared first making it difficult for another XML
+    parser, the Crimson subproject, to be adopted. In fact, the
+    best parts of Crimson have been merged into the Xerces code
+    base and work on the Crimson subproject has been halted.</p>
+
+    <p>A problem comes from believing that developing the code is
+    all that is required. If all of your attention is on developing
+    the code, you are likely to lose track of your main business
+    goals. For example, if ubiquity is a goal, then marketing the
+    technology to potential partners should have a high
+    priority--internal development resources should be focused on
+    helping partners succeed. If you can get a large company such
+    as IBM or HP to adopt the technology, you can be sure they will
+    contribute their own developers to help work on the code.
+    Unfortunately, the natural tendency is to try to do everything
+    yourself, and so larger opportunities are often neglected.</p>
+
+    <p>Another way this problem can hurt your project is if the
+    developers, both internal and external, are the only ones to
+    decide on the project's future direction. The whole idea of
+    open source as a meritocracy focused on coding tends to
+    disenfranchise anyone who does not contribute code, which means
+    that users, UI designers, marketing people, and the like are
+    often not able to fully participate. This results in software
+    that is designed by developers for developers, and this is why
+    much open-source software is not appropriate for the general
+    public. If you are seeking &quot;world domination,&quot; then
+    this can be a major problem that you need to overcome.</p>
+
+    <p>One way to make the focus go beyond the code is to actively
+    make roles for nondevelopers such as UI designers and
+    documentation writers. For example, NetBeans has a
+    communitywide mailing list dedicated to the design and
+    discussion of UI issues. There is also a NetBeans project
+    focusing on UI development and issues, plus a process through
+    which other developers can get UI design assistance from the
+    members of the UI project. When the NetBeans project first
+    started, there was a hesitancy to add nondeveloper roles like
+    this because that wasn't something that the high-profile
+    open-source projects such as Apache or Linux did. You may
+    encounter similar resistance.</p>
+
+    <p>It should be noted that the UI community traditionally has
+    worked in a test-first design atmosphere in which usability
+    testing takes place before committing anything to code, so
+    there could be a basic mismatch of working styles between your
+    UI folks and the open-source developers. This has been known to
+    hurt open-source projects in general, so you should make sure
+    that the UI folks you include in your open-source project are
+    educated in continuous (re)design and buy into the
+    approach.</p>
+  </div>
+
+  <div id="trying-to-control-too-much">
+    <h2>Trying to Control Too Much</h2>
+
+    <p>One of the surest ways to cripple an open-source project is
+    for the original developers to refuse to give up control. At
+    best this turns potential outside developers into a user group,
+    and at worst it kills the project. There are many ways that the
+    original developers can try to keep control.</p>
+
+    <p>A common mistake is that the internal development group
+    believes that it does not need to change how it works. Very
+    often the internal developers continue to use a private company
+    mailing list to carry on discussions about project issues.
+    Although not every email message needs to be sent to the public
+    project mailing list, if essential design discussions are
+    carried out in private, then one of the main benefits of open
+    source--feedback from users and outside developers--is lost. A
+    further problem is that when the internal developers do post to
+    the rest of the community, they are announcing what they have
+    decided rather than starting a community discussion. For a
+    successful open-source project, the internal development team
+    needs to shift its email discussions to the project's public
+    mailing lists.</p>
+
+    <p>The other major way that internal developers keep control of
+    the development process is by keeping a private code archive,
+    often one that relies on a proprietary code versioning tool
+    instead of CVS. Some projects do not even have a public code
+    archive, just tar<sup><a href="#fn5" class="footnoteRef" id=
+    "fnref5" name="fnref5">5</a></sup> files with the source code
+    for the most recent release. This sends a clear message to
+    potential outside developers that they are second-class
+    citizens who can look at the code but never touch it
+    meaningfully--in fact they cannot even see the most recent
+    changes but need to wait until the public copy is updated. A
+    real open-source project has one public code archive that all
+    developers use, although not everyone will have full
+    write-access to it.</p>
+
+    <p>Another problem arises when developers want their design or
+    code to be perfect before letting anyone else see it. A major
+    shift in attitude is needed to go from a proprietary
+    development environment where, in many cases, no one ever looks
+    at your code, to an open-source world where everyone may see
+    what you've done, warts and all. Whether it's a single
+    developer or the entire internal development team, waiting too
+    long before releasing a design or code is a mistake that hurts
+    the overall project. It is important that everyone thinks in
+    terms of a work in progress, developed in the open to maximize
+    possible feedback from others. Remind folks that nothing is
+    final; it is always subject to modification as the project's
+    needs change.</p>
+
+    <p>A more general problem is common to both proprietary and
+    open-source projects: developers and managers try to make a
+    master plan and then carry it out. Planning is good, but,
+    carried to the extreme of not adapting to change, it can hurt
+    your project. For example, some open-source projects try to
+    figure out all the appropriate mailing lists and set them up so
+    they will be ready when the project is first announced.
+    Unfortunately, the needs of a project that has just started up
+    are often quite different from those of one that has been
+    running for a while. A better approach is to start with one or
+    two main mailing lists and to create more lists only when the
+    number of daily messages grows too large. Engineering in
+    general often tries to do the &quot;right thing&quot; in one
+    step rather than taking a number of smaller steps in whatever
+    direction currently seems best. A decision maker who believes
+    strongly in master planning will probably not buy into the
+    fundamental philosophical tenets of open source (see
+    <sup><a href="#fn6" class="footnoteRef" id="fnref6" name=
+    "fnref6">6</a></sup></p>
+
+    <p>This problem can often be seen when core developers refuse
+    to engage with outside developers in design discussions on the
+    project's mailing lists--often the core developers don't even
+    read the public mailing lists. Refusing to listen to community
+    concerns hurts the project because it both kills a sense of
+    community and results in developing the wrong product. Keep in
+    mind that approximately half of all software projects fail, not
+    for technical reasons but because they produce a result that
+    does not match the needs of the target audience. Feedback from
+    the community in an open-source project increases the
+    probability that what is produced is what is wanted. Make sure
+    you listen to what your community members say; they are
+    probably right.</p>
+
+    <p>If your community encounters difficulties in working with
+    your developers because of any of these problems, then you
+    should not expect much in the way of outside contributions. Any
+    external developers interested in your project will probably
+    work well outside the core area that your internal developers
+    have laid claim to. Contributions of new plug-ins or new
+    modules are possibilities; major improvements to existing
+    modules are not.</p>
+
+    <p>Even if you have been doing everything correctly, the
+    community will mostly leave improvements to the core to you
+    until there are visible or a significant number of outside
+    developers working on core modules. That's why it is very
+    important to publicize any outside developer activities or
+    contributions to the core area, to break down the view that
+    your company handles everything related to it. This will take
+    time, so be sure that the metrics you use to measure the
+    success of your project reflect this.</p>
+
+    <p>This is not a problem just for company-sponsored projects;
+    traditional open-source projects also encounter it. For
+    example, in April 2003 a fork of the XFree86 project was
+    started because of the feeling that the core team was
+    controlling development too tightly and not listening to the
+    rest of the community. Problems identified by the community
+    included limited development resources (fewer contributors than
+    for much smaller open-source projects), slow release schedules,
+    lack of cooperation with other projects such as KDE and GNOME,
+    and an opaque development process (core team using a private
+    mailing list and no information available on the XFree86 home
+    page on how to become an XFree86 developer). Part of the
+    problem came from the way the project was initially structured
+    in order to satisfy requirements of a contract with X.org. The
+    rest came from not changing the decision-making process as the
+    project grew. More details can be found in an online interview
+    with a former XFree86 core team member.<sup><a href="#fn7"
+    class="footnoteRef" id="fnref7" name="fnref7">7</a></sup></p>
+
+    <p>The day-to-day operation of a project offers many
+    opportunities to make mistakes by people trying to retain
+    control. Creating a real community requires that the community
+    participate in making decisions. There is no real community
+    when the only developers who can check in code to the CVS
+    archive work for your company, where every important module is
+    owned by a developer employed by your company, or where the
+    governance board consists solely of your company's employees.
+    So grant outside developers the right to check in code as soon
+    as possible, put an outside developer in charge of a module as
+    soon as possible, and have outside developers on your
+    governance board.</p>
+
+    <p>You can alienate outside developers if your company's
+    employees are automatically given check-in privileges while
+    outside developers have to earn them by making good
+    contributions. This is a common mistake for open-source
+    projects with a core team from a single company. It is
+    important that all developers be treated according to the same
+    standards regardless of which company they work for. Sometimes
+    new developers at your company may have made contributions that
+    the outside community doesn't see because they have handed over
+    their code to the module owner in private, so be sure to make
+    the activity of new folks visible to all.</p>
+
+    <p>Another mistake some open-source projects make is for the
+    module owners to be too slow to accept outside contributions
+    and check them in to the official code archive--or even worse,
+    to refuse to accept them. This might be because the module
+    owner is too busy to deal with any contributions from the
+    community. It might also be because the module owner is being
+    too controlling over what goes into the module. Part of the
+    module owner's job is to maintain the quality of the code, but
+    another, equally important job is to be responsive to the
+    directions set by the community.</p>
+
+    <p>If another company is contributing so much code that the
+    module owner becomes a bottleneck, then it is important that
+    one or more of the outside contributors be granted the right to
+    also check in code. The alternatives might be that few will
+    make additional contributions or, more likely, that the outside
+    developers will fork the project, as happened when the XEmacs
+    developers started a second open-source project to develop
+    Emacs faster and in a different direction than the original
+    Emacs effort.</p>
+
+    <p>In summary, one of the worst things you can do to your
+    open-source project is to try to control it too much. Although
+    other mistakes you could make will slow down or limit your
+    project, your keeping too much control will minimize outside
+    contributions and make it likely that someone will fork the
+    project. Rather than trying to control everything, you should
+    provide positive leadership. If you set goals that the
+    community agrees on, then everyone will be working together to
+    advance the project. If you don't engage the community, you
+    will lose it because everyone will stop trying to work with you
+    and go elsewhere. One final point is that not all engineers and
+    managers are cut out for open source: If they refuse to give up
+    control, then they may do more harm than good for your
+    project.</p>
+
+    <p>Many of these problems stem from not thoroughly buying into
+    the philosophy and practices of open source. If the development
+    team and management will not buy into loosening control and
+    valuing active community participation, you should abandon
+    pushing for using an open-source methodology in your
+    company.</p>
+  </div>
+
+  <div id="marketing-issues">
+    <h2>Marketing Issues</h2>
+
+    <p>A big mistake many company-initiated open-source projects
+    make is not actively marketing themselves and the applications
+    they are creating. No marketing means fewer users and fewer
+    contributors. For a low-key effort this may be fine, but if you
+    really want your project to take off, people need to hear about
+    it.</p>
+
+    <p>When they hear about it is also important. Some companies
+    make a big announcement well before the project is underway and
+    the code is available. This can drum up quite a bit of interest
+    in the project, but if there's nothing for potential outside
+    contributors to do, it can be a wasted opportunity. For
+    example, in mid-July 2000, Sun announced that the StarOffice
+    source code would be made available, and created a project
+    website at Openoffice.org. This generated lots of interest and
+    many people flocked to the Openoffice.org mailing lists.
+    Unfortunately, there was no documentation about the soon-to-be
+    released code, and only a few, junior StarOffice developers
+    participated on the mailing lists. As a result, potential
+    community members ended up spinning their wheels speculating
+    about how StarOffice worked until the code was finally released
+    in mid-October and more senior members of the StarOffice
+    development team joined the mailing lists. If you were having a
+    party at your house, you would not think of making your guests
+    wait outside for hours before letting them in, and, if they did
+    have to wait outside you would go out and welcome them, not
+    leave them to fend for themselves.</p>
+
+    <p>Big announcements that get major press coverage are great
+    for your project--when they have real content and are not
+    simply hype. Many marketing and PR people are trained to sell
+    benefits (and never mention possible drawbacks) as part of
+    making announcements, but to technical people expecting to hear
+    about a down-to-earth open-source project, such selling can
+    sound like hype. Many marketing and PR people do not consider
+    it worthwhile to make announcements in which they cannot sell
+    benefits, and so you end up having relatively infrequent, large
+    announcements with long gaps between them. During these gaps,
+    people might conclude that your project is dead because they
+    haven't heard any recent news about it. This happened to the
+    Jini project in the several-year interval between when the
+    technology was first announced and when products based on Jini
+    began to appear in the marketplace. Any new technology will
+    have a similar interim period. Following a huge initial
+    announcement with a very long and noticeable silence will
+    invite people to think the project has failed. You should make
+    sure that the many small but significant events associated with
+    your project are properly communicated to the public. Frequent
+    short mentions of your progress lets people know that your
+    project is alive and well. An ideal way to communicate current
+    news of your project is to post it on your project's
+    website.</p>
+
+    <p>Letting your project website become stale is a surefire way
+    to make people think that your project is dead. Many people
+    interested in your project never subscribe to the project's
+    mailing lists--they periodically surf to your project's website
+    to see what's happening. If the project's home page hasn't
+    changed, they may conclude that no major work has been done and
+    are less likely to check again. Make sure that someone is
+    assigned to update your website on a regular basis.</p>
+
+    <p>One of the worst marketing mistakes a company can make is
+    failing to give proper credit for the work done by outside
+    developers. For example, back in December 1999 at a large trade
+    show, Sun announced the release of a Linux version of the Java
+    2 Platform, Standard Edition (J2SE) that had been done in
+    collaboration with Borland Software Corporation (at the time of
+    this incident, it was named the Inprise Corporation; it was
+    originally named Borland International Inc.). The press release
+    failed to mention that much of the work that lay behind this
+    version of J2SE had been done by the Linux Blackdown Porting
+    Team, a group of open-source programmers devoted to Java. The
+    open-source community was stung by the omission and started to
+    lose trust in Sun. It turned out that this major error happened
+    because the marketing person writing the press release was
+    unaware of the work done by the Blackdown project. Sun
+    immediately released another announcement giving proper credit
+    to the Blackdown team, and the Sun engineers in charge of the
+    Linux port personally apologized to the Blackdown group.
+    Promptly admitting the mistake and correcting it was crucial to
+    Sun's regaining trust with the open-source community.</p>
+  </div>
+
+  <div id=
+  "tension-between-an-open-source-project-and-the-rest-of-your-company">
+  <h2>Tension between an Open-Source Project and the Rest of Your
+  Company</h2>
+
+    <p>The Blackdown incident highlights another mistake: Sun
+    failed to publicize participation by Sun engineers in the
+    Blackdown work and other open-source projects. If people inside
+    of Sun had known about this, then the press-release mistake
+    would never have happened. Moreover, many in the open-source
+    community are unaware of Sun's many contributions to
+    open-source projects, which causes Sun to not receive the
+    credit it has earned. According to the Orbiten Free Software
+    Survey<sup><a href="#fn8" class="footnoteRef" id="fnref8" name=
+    "fnref8">8</a></sup> done in May 2000, Sun was in fact ranked
+    as the second largest contributor of code to open-source
+    projects. Your company needs to let others know about its
+    contributions to open-source projects to get the credit it
+    deserves--but without overemphasizing or hyping its
+    participation.</p>
+
+    <p>It's not enough that everyone working on your open-source
+    project interact appropriately with the outside world, you also
+    have to deal with the rest of your company. If others inside
+    your company do not understand why you are using open source
+    and the implications of that for their work, then your project
+    can run into major trouble. Open-source projects need different
+    resources than proprietary ones and have different constraints
+    on how they operate. If this is not understood by those outside
+    your project, then they likely will work against you in the
+    normal internal politics that go on inside every company.</p>
+
+    <p>One mistake your open-source project can make is to fail to
+    market itself within your company. Moreover, your message needs
+    to have a different emphasis from the one used for people
+    outside of your company. You need to communicate how the goals
+    of your project help further your company's business goals. If
+    you fail to do this, then your project may be seen as
+    irrelevant and other, proprietary efforts will be given
+    precedence. This marketing must be an ongoing activity,
+    especially when there are changes in upper management.</p>
+
+    <p>You must educate people at your company about what metrics
+    will be used to measure the success of your project. These are
+    likely to be quite different from the more familiar metrics
+    used for proprietary projects. Anyone opposed to your project,
+    for whatever reason, will have a much harder time proving it a
+    failure if everyone understands the appropriate metrics for
+    measuring it.</p>
+
+    <p>The results of a lack of internal marketing and poor metrics
+    can be devastating to your project if your company hits hard
+    times and needs to look for people to lay off. This happened at
+    Sun in 2001 when the size of the Jini development team was
+    reduced. Particularly hard hit were those folks working on
+    community issues, including the main community manager (who was
+    also one of the original developers of Jini) and the person
+    working on updating the Jini.org website. These were very
+    visible cuts, and the community began to conclude that they
+    signalled that Sun was pulling back from Jini technology. It
+    took several messages from Sun executives to reassure the
+    community that Jini was still important to the company.</p>
+
+    <p>A common management mistake we have seen is to have people
+    trying to serve two masters. Developers helping to grow the
+    community while writing code to meet internal deadlines for
+    proprietary work will feel pressure from the company to make
+    the proprietary work higher priority. It is necessary to
+    separate developers into those focused on the open-source
+    activities of the project and those doing work on proprietary
+    projects. Otherwise, local pressure from managers and coworkers
+    will ensure that the proprietary aspects are given priority. A
+    failure to include community-related metrics in the performance
+    reviews of those involved with open-source activities is a
+    common mistake, with the direct result that those community
+    activities tend to be neglected.</p>
+
+    <p>The worst type of mistake that projects make is to try to
+    cheat or put something over on their communities. This could be
+    as minor as sneaking code into the code base or as major as
+    blocking a competing company from checking in code it needs.
+    Any actions that treat the open-source project as if it were a
+    proprietary effort owned by your company destroys the
+    community's trust in your company--both for your project and
+    also for any other open-source projects that your company is
+    involved in. People who think that they can get good PR for an
+    open-source project while playing the same old proprietary game
+    are sadly mistaken. If someone tries to avoid, ignore, or
+    otherwise fool your project's community, you need to point out
+    that your company has made a public commitment to your
+    open-source community and any monkey business will get your
+    company bad publicity. Any activity that does not show respect
+    to the community and the approved community processes should be
+    avoided, even when apparently done with good intentions.</p>
+
+    <p>Tension between the proprietary side of your company and
+    your open-source project is apt to arise over your project's
+    schedule. Groups doing proprietary efforts within your company
+    expect you to have control over when your project does a
+    release and what features are included in it. If their products
+    depend on yours, this may cause them to make unrealistic plans.
+    You need to educate them so that they understand that your
+    community has a major say in the release process.</p>
+  </div>
+
+  <div id="community-issues">
+    <h2>Community Issues</h2>
+
+    <p>So far we have discussed some of the worst mistakes that can
+    hurt the growth of your project's community. These include
+    mistakes such as continuing to work in a proprietary style
+    without engaging the community, trying to plan out the entire
+    community ahead of time rather than letting it develop more
+    organically, starting up the project website and mailing lists
+    before you are ready to participate, and acting as if you owned
+    the entire project.</p>
+
+    <p>Another set of mistakes stems from a belief that the
+    community will arise by itself. That will never happen. For
+    example, it is common to believe that the community doesn't
+    need face-to-face meetings--that email communication alone will
+    create the needed connections between people. This just isn't
+    the case. Meeting in person allows folks to put faces with
+    names and to see each other as people; it helps to break down
+    the barriers between your company's employees and outside
+    contributors. A related mistake is believing that all that is
+    needed to have a community meeting is to announce it a few
+    months in advance, and then it will just happen. This also
+    doesn't work. As for any meeting, it is important to plan out
+    what topics will be discussed and to post an agenda well in
+    advance. It is also necessary to talk up the meeting in
+    community discussions. People need to be motivated to want to
+    attend, especially for the first few meetings when the
+    community is just getting established. Creating a vibrant
+    community can occur only if you and your team nurture it by
+    encouraging contributors, holding community meetings, and
+    supporting community activities.</p>
+
+    <p>Another problem occurs when your company's developers send
+    harsh or acrimonious messages--<em>flames</em> --to a project
+    mailing list. Flaming rarely improves matters, and the
+    community will consider the flame to have come from your
+    company. Make sure you and your teammates follow good posting
+    etiquette and avoid attacking outside developers. Even if you
+    know that the person you want to flame is comfortable with that
+    sort of exchange, remember that public messages are seen by all
+    the community members, many of whom do not appreciate flames.
+    You should think of the entire mailing list as being the
+    audience for any emails you send--don't focus on a specific
+    individual. Because the mailing lists are the major way people
+    in your community communicate, it is crucial that everyone
+    feels safe posting to them. Flaming and harsh criticism in
+    messages discourage many people from participating.</p>
+
+    <p>A similar problem is that any opinions or comments posted by
+    an employee of your company will often be taken as official
+    company policy. You need to be sure to indicate which postings
+    are just your personal thoughts and which are really company
+    policy.</p>
+
+    <p>Not telling the rest of the community what you are planning
+    is another all too common problem. For a project that you are
+    leading, this behavior will generally discourage community
+    involvement; for a project that you are only a participant in,
+    it will make it harder for you to get your contributions
+    accepted. In both cases, you also lose out by not getting
+    feedback early on when it can do the most good--so your
+    eventual result will not be as good as it could have been. You
+    may be acting with the best of intentions, but others in the
+    community will not know that and are likely to assume
+    otherwise. The article reproduced in Appendix D gives an
+    example of what can happen when a company's developers do not
+    communicate their plans to the community in advance.</p>
+
+    <p>Another set of problems center on how easy it is for
+    community members to create new subprojects for modules they
+    are working on. On Jini.org, any registered community member
+    can create a new subproject; however, old subprojects that die
+    are not cleaned up. As a result, it is very confusing to Jini
+    developers who want to join an existing subproject because they
+    are confronted with a list of over 100 subprojects, many of
+    which are defunct. For any open-source project, someone in the
+    community needs to be responsible for pruning inactive
+    subprojects. On the other hand, diversity is good--it's how
+    innovation and creativity come about. So it's good when many
+    subprojects get started, even if many of them die out. And when
+    a subproject is dead, it should be moved to an inactive list
+    rather than to the dumpster in case someone later wishes to
+    pick it up.</p>
+
+    <p>Evangelize active projects so potential participants know
+    about them. Both the Jini and the JXTA project home web pages
+    have a section spotlighting one or two community projects.</p>
+
+    <p>The opposite problem occurs when it is too hard for someone
+    to start up a new project. Both NetBeans and JXTA have an
+    approval process for creating a new project. A public
+    discussion is required before a new project can be approved.
+    This works to avoid duplication and to inform the rest of the
+    community about the new project, but in a way this may prevent
+    some types of projects from being started. People are generally
+    conservative, and, when a project sounds like it is outside
+    what is normal or usual, people tend to discount or discredit
+    it. So, if you ask people what they think about a project that
+    is innovative in some way, they may tend to disparage it. In
+    contrast, if you simply let the project proceed, then once
+    people try out a working version of it perhaps they will
+    understand its value. That is, a deliberate approval process
+    can screen out innovative projects because of a kind of fear.
+    Many technical people, particularly software people, try to
+    create tidy logical structures and ontologies and then place
+    things into them. When an area is not thoroughly known, it
+    isn't possible to make such tidy structures, but that doesn't
+    inhibit the impulse. Some new projects won't fit into one of
+    these imagined tidy structures and might be criticized because
+    of it. Hence, a better approach might be to allow anyone to
+    create a new project and then have a community coordinator
+    monitor the project's health; should it die, the community
+    coordinator can then move it to a list of inactive
+    projects.</p>
+
+    <p>A final community-related problem concerns one-size-fits-all
+    project infrastructure tools. Make sure that the company
+    providing the infrastructure for your project (website, CVS
+    tree, mailing lists, and bug database) does not treat your
+    project as a generic open-source project. Every open-source
+    project will naturally do things slightly differently, and,
+    where this is significant, you don't want your project
+    constrained by your infrastructure provider. For example, the
+    NetBeans project had decided to use a model where any developer
+    trusted to commit changes to one module was trusted to commit
+    changes to every module. This model encourages community
+    members to trust each other, and relies on social rather than
+    technological means to enforce rules for code changes. The
+    original open-source infrastructure provided by CollabNet, the
+    NetBeans infrastructure provider, had supported this model.
+    CollabNet later decided to upgrade their infrastructure, and
+    the new design (SourceCast) assumed as universal the practice
+    some open-source projects adopted of limiting developers' CVS
+    access to just those modules that they have been explicitly
+    granted access to. The NetBeans project discovered this only
+    after the upgrade, and it caused some ruffled feathers in the
+    community when developers' privileges disappeared without
+    warning. CollabNet agreed to change their software to be more
+    policy neutral. This example illustrates two things:
+    technological concerns should not dominate design; and there is
+    not one true way to do open source.</p>
+  </div>
+
+  <div id="lack-of-resources">
+    <h2>Lack of Resources</h2>
+
+    <p>The underlying cause of a number of the mistakes we have
+    been discussing is a lack of resources, most notably people to
+    work on some necessary aspect of your project. These people can
+    be employees of your company who are assigned to work on your
+    project, or they can be volunteers, including employees of
+    other companies.</p>
+
+    <p>Many projects do not have anyone assigned to be a community
+    manager or coordinator. That can compound any resource problems
+    because the community coordinator is the person who recruits
+    volunteers from the community to help out. For a smaller
+    project, this can be done by the project owner, whereas for
+    bigger projects, it might be part of the product manager's job.
+    For large projects, it can become a full-time job.</p>
+
+    <p>The most common reason a project's website becomes stale is
+    that no one has time to update it. Outside contributions can
+    get ignored when module owners are too busy. Someone needs to
+    write the internal documentation needed to orient potential
+    contributors. Make sure that you don't let critical tasks
+    remain undone: Assign an employee of your company or find an
+    outside volunteer.</p>
+
+    <p>One of the primary reasons to do an open-source project is
+    to benefit from feedback from outside your company. If you do
+    not have the resources to take advantage of this community
+    feedback, then you are missing out on a major opportunity. Many
+    company-sponsored open-source projects suffer from this problem
+    by having inflexible plans made without consulting their
+    communities. In addition to not acting on the good ideas
+    suggested by your community members, you alienate them by
+    ignoring what they are trying to tell you. They will stop
+    wasting their time trying to interact with you and devote their
+    energy elsewhere.</p>
+
+    <p>A related problem is using the wrong resources. An
+    open-source project is a development effort that exploits
+    continuous design but with further opportunities for
+    marketing-related and other strategic efforts. Nevertheless,
+    the heart of the activity is development with development goals
+    and practices. Things can go wrong if an organization other
+    than engineering or development is the home for open-source
+    projects and open-source oversight. For example, sometimes a
+    company will determine that it needs to build a community of
+    developers for some strategic purpose such as executing on a
+    &quot;developer capture&quot; program designed to lure more
+    developers into the company's camp. Because this is a marketing
+    activity, it might seem natural to locate oversight in a
+    marketing group, so that, for example, measurements of progress
+    and of the nature of the developers captured can be made.
+    However, a marketing group is unlikely to know enough about
+    software development to oversee the community, nor is it likely
+    to have a reason to care about ongoing software development
+    once the developers have been &quot;captured.&quot;</p>
+  </div>
+
+  <div id="recovering-from-mistakes">
+    <h2>Recovering from Mistakes</h2>
+
+    <p>Everyone makes mistakes. It's what you do after a mistake
+    that really matters. Here's what you need to do:</p>
+
+    <ul>
+      <li>Admit that a mistake was made.</li>
+
+      <li>Take steps to set things right.</li>
+    </ul>
+
+    <p>Honestly discussing with the community what happened and how
+    to make sure it does not happen again is the only way to
+    proceed if you want to have a successful open-source project.
+    Doing the right thing will give your community a reason to
+    trust you more in the future. Being defensive, refusing to
+    admit there is a problem, and refusing to fix things are just
+    further mistakes that will alienate potential users and
+    contributors and erode their trust in you.</p>
+  </div>
+</div>
+
+<div class="footnotes">
+  <hr>
+
+  <ol>
+    <li id="fn1">
+      <p>Microsoft CEO Steve Ballmer called Linux a
+      &quot;cancer&quot; because of its use of GPL, in an interview
+      in the <em>Chicago Sun Times</em> on June 1, 2001.
+      Microsoft's operating systems chief Jim Allchin said the
+      following in a statement originally reported by <em>Bloomberg
+      News</em> on February 14, 2001: &quot;I'm an American; I
+      believe in the American way ... I worry if the government
+      encourages open source, and I don't think we've done enough
+      education of policymakers to understand the threat.&quot; One
+      of the many online discussions of both these remarks can be
+      found at <a href=
+      "http://www.computerweekly.com/articles/article.asp?liArticleID%20=%20123866&amp;liFlavourID%20=%201&amp;sp%20=%201">
+      http://www.computerweekly.com/articles/article.asp?liArticleID
+      = 123866&amp;liFlavourID = 1&amp;sp = 1.</a> Since these
+      statements, Microsoft has launched a number of shared-source
+      programs, and at this time sponsors two small open-source
+      projects on SourceForge <a href=
+      "http://sourceforge.net/projects/wtl">(http://sourceforge.net/projects/wtl</a>
+      and <a href=
+      "http://sourceforge.net/projects/wix">http://sourceforge.net/projects/wix).</a>
+      <a href="#fnref1" class="footnoteBackLink" title=
+      "Jump back to footnote 1">&#8617;</a></p>
+    </li>
+
+    <li id="fn2">
+      <p>Richard Gabriel was the founder of Lucid, originally and
+      primarily a company that provided Common Lisp systems for all
+      the hardware manufacturers when artificial intelligence was
+      all the rage. Ron Goldman was an employee of Lucid for
+      several years. <a href="#fnref2" class="footnoteBackLink"
+      title="Jump back to footnote 2">&#8617;</a></p>
+    </li>
+
+    <li id="fn3">
+      <p>Java Management Extensions (JMX) technology provides the
+      tools for building distributed, web-based, modular, dynamic
+      solutions for managing and monitoring devices, applications,
+      and service-driven networks. Quote taken from: <a href=
+      "http://www.onjava.com/pub/a/onjava/2001/02/01/jmx.html">http://www.onjava.com/pub/a/onjava/2001/02/01/jmx.html</a>
+      <a href="#fnref3" class="footnoteBackLink" title=
+      "Jump back to footnote 3">&#8617;</a></p>
+    </li>
+
+    <li id="fn4">
+      <p>This is in contrast to the case in the commercial world,
+      where the first to market is rarely the winner (<a href=
+      "IHE-23.html#59733">Creativity</a> in Chapter 2). Unlike in
+      the commercial world, the open-source community tends to
+      perform relentless and continuous design and redesign,
+      thereby quickly turning a possibly flawed first attempt into
+      a polished winner. <a href="#fnref4" class="footnoteBackLink"
+      title="Jump back to footnote 4">&#8617;</a></p>
+    </li>
+
+    <li id="fn5">
+      <p>&quot;Tar&quot; stands for tape archive. Originally the
+      tar program was used to store files in archives on magnetic
+      tape, but the modern generalization of it can create a single
+      file that holds both files and directories, which is
+      convenient for emailing, uploading, and downloading source
+      code files for an entire system or large program. Such files
+      are called &quot;tar files&quot; or, more properly, &quot;tar
+      archives&quot;; a colorful variant is &quot;tarball.&quot;
+      <a href="#fnref5" class="footnoteBackLink" title=
+      "Jump back to footnote 5">&#8617;</a></p>
+    </li>
+
+    <li id="fn6">
+      <p><a href=
+      "http://www.xfree86.org/pipermail/forum/2003-April/000983.html">
+      http://www.xfree86.org/pipermail/forum/2003-April/000983.html</a>
+      <a href="#fnref6" class="footnoteBackLink" title=
+      "Jump back to footnote 6">&#8617;</a></p>
+    </li>
+
+    <li id="fn7">
+      <p><a href=
+      "http://lwn.net/Articles/27673">http://lwn.net/Articles/27673</a>
+      <a href="#fnref7" class="footnoteBackLink" title=
+      "Jump back to footnote 7">&#8617;</a></p>
+    </li>
+
+    <li id="fn8">
+      <p>Formerly located at <a href=
+      "http://orbiten.org/ofss/01.html">http://orbiten.org/ofss/01.html,</a>
+      the text of the survey can still be found at <a href=
+      "http://amsterdam.nettime.org/Lists-Archives/nettime-bold-0005/msg00106.html">
+      http://amsterdam.nettime.org/Lists-Archives/nettime-bold-0005/msg00106.html</a>
+      <a href="#fnref8" class="footnoteBackLink" title=
+      "Jump back to footnote 8">&#8617;</a></p>
+    </li>
+  </ol>
+</div>

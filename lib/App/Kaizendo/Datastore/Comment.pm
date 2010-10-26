@@ -2,6 +2,8 @@ package App::Kaizendo::Datastore::Comment;
 use App::Kaizendo::Moose;  # Set up Moose environment
 use DateTime;
 
+use aliased 'App::Kaizendo::Datastore::Location';
+
 type 'DateTime' => as 'Object' => where { $_->isa('DateTime') };
 
 class_type 'App::Kaizendo::Datastore::Project';
@@ -16,6 +18,7 @@ has in_reply_to => ( is => 'ro', isa => 'App::Kaizendo::Datastore::Comment' ); #
 has published   => ( is => 'ro', isa => 'DateTime', default => sub { DateTime->now(); } );
 has content     => ( is => 'ro', required => 1 );
 has summary     => ( is => 'ro', default => sub { '...' } ); # FIXME: Generate from content?
+has location    => ( is => 'ro', isa => 'Location' );
 
 __PACKAGE__->meta->make_immutable;
 1;

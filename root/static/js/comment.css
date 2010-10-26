@@ -1,0 +1,23 @@
+.foo {
+    color: blue;
+}
+.highlight1 {
+    background-color: yellow;
+    visibility: visible;
+}
+.highlight2 {
+    background-color: orange;
+    visibility: visible;
+}
+#container {
+    position: absolute;
+    z-index: 9;
+}
+.clone {
+    position: absolute;
+    visibility: hidden;
+    color: #fff;
+}
+form.add_comment {
+    display: none;
+}

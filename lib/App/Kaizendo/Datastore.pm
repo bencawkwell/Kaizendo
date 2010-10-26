@@ -27,6 +27,19 @@ method get_project_by_name ($name) {
     (grep { $_->name eq $name } $self->get_all_projects->flatten)[0];
 }
 
+
+# Get all the available comments
+method get_all_comments { # This is a copy of get_all_projects
+    my $bulk = $self->root_set;
+    my @all = grep { $_->isa('App::Kaizendo::Datastore::Comment') } $bulk->all;
+    return [ @all ];
+}
+
+# Get a specific comment
+method get_comment_by_id ($id) {
+    (grep { $_->id eq $id } $self->get_all_comments->flatten)[0];
+}
+
 __PACKAGE__->meta->make_immutable;
 
 =head1 AUTHORS, COPYRIGHT AND LICENSE

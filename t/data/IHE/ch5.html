@@ -1,0 +1,1586 @@
+<div id="licenses">
+  <h1>5. Licenses</h1>
+
+  <p>Open source is a commons-based activity in which a community
+  of people work on a shared artifact, in this case source code.
+  Source code is covered by copyright law, which in the United
+  States grants copyright to an author immediately upon completion
+  of the piece. When copyright law in the United States was first
+  written, the duration of protection was 14 years with perhaps an
+  opportunity to renew it once. Now copyright extends until the
+  death of the author plus 70 years.</p>
+
+  <p>Software enjoys the same protections as any other literary
+  work. In addition, software may contain the implementations of
+  patented methods--called software patents. Currently, the
+  copyright holder retains the right to strict control of the work,
+  including copying, derived works, distributions, and public
+  performance. Originally, copyright law tried to strike a balance
+  between providing an incentive for creators and allowing other
+  creators to build on works already created. The expansion of
+  copyright protection has been rapid over the last 40 years as
+  institutional &quot;content&quot; creators lobbied for expanded
+  protection.</p>
+
+  <p>A key to understanding open source as a business strategy is
+  coming to terms with the idea that there is a middle ground
+  between &quot;all rights reserved&quot; and the public domain. It
+  is possible for a holder of intellectual property to carefully
+  craft a description of rights the holder wishes to retain and
+  freedoms the holder grants to licensees. Think in terms of
+  &quot;some rights reserved&quot; or &quot;most rights
+  reserved.&quot; Even when source code is visible and even
+  downloadable on the Internet, the copyright and patent holders
+  retain ownership of the material and, by licensing arrangements,
+  control what they wish to control. In fact, copyright and patents
+  are in place precisely to encourage people to create, invent, and
+  put on display their creations and explain their inventions.</p>
+
+  <p>A good, clear example of this is the VTK project. The project
+  provides a simple license as part of the copyright notice--and in
+  fact, the term <em>copyright</em> is used the way most
+  open-source projects use the term <em>license</em> , and some
+  open-source licenses, such as BSD (discussed later), likewise
+  state their license terms as part of the copyright notice. The
+  VTK directory structure isolates files and classes that contain
+  patented algorithms (they are in special subdirectories), and the
+  license states that any commercial use of those parts requires
+  licenses from the patent holders--and it provides contact
+  information for them. The commercial use could be as part of VTK
+  or as part of other systems. However, individuals, universities,
+  and companies can use the code without special terms as long as
+  there is no commercial benefit derived, and the nonpatented parts
+  can be used commercially without special licenses.</p>
+
+  <p>This represents an example of how the rights to intellectual
+  property have been carved up by one group. Other groups might
+  limit the use of patents to software developed as part of the
+  open-source project, while uses of those patents in other,
+  unrelated software would be restricted or prohibited.</p>
+
+  <p>Naturally, crafting a too restrictive set of rights granted to
+  others can stifle the success of an open-source project, but
+  there is no need to abandon all property rights. For open source
+  to work, the author or copyright holder basically needs to grant
+  rights to use, modify, and distribute. This is accomplished
+  through licensing, which, although granting rights to others,
+  does not transfer ownership in any way, so that the owner of the
+  source code can change how the source is licensed in the future,
+  can decide not to license it, or can transfer ownership.</p>
+
+  <p>A variety of licenses have been created to meet the different
+  needs of open-source projects--the original Berkeley Unix was
+  released under the Berkeley Software Distribution (BSD) license,
+  Linux and Emacs use the GNU General Public License (GPL), and
+  Netscape created the Mozilla Public License (MPL) for its
+  browser. Companies such as IBM and Sun have written a variety of
+  licenses including the Common Public License (CPL), Sun Industry
+  Standards Source License (SISSL), and Sun Community Source
+  License (SCSL). Over 50 different licenses have been certified as
+  meeting the criteria for open source by the Open Source
+  Initiative, a nonprofit corporation dedicated to managing and
+  promoting the Open Source Definition,<sup><a href="#fn1" class=
+  "footnoteRef" id="fnref1" name="fnref1">1</a></sup> and
+  additional types of licenses have been created for use by other
+  open-source projects.</p>
+
+  <p>This large number of possible licenses creates confusion for
+  people considering starting in an open-source project. When
+  choosing a license for your project, it is best to use one of the
+  existing licenses--preferably one already in widespread
+  use--rather than trying to create a new one.</p>
+
+  <p>Creating a new license is a difficult legal process. It is
+  likely that an existing license captures most, if not all, the
+  concerns you might have, and the open-source community has little
+  patience for people and organizations who don't believe in the
+  already working, existing licenses. Moreover, a new license would
+  perhaps need to be certified by the Open Source Initiative to
+  satisfy the business objectives of its creator. Existing
+  licenses--especially those in widespread use--are like brands in
+  that people already are familiar with their terms and how to work
+  with software licensed under them. By choosing a well-known,
+  accepted license, you are also choosing a reduced learning and
+  adoption curve for your community members.</p>
+
+  <p>In this chapter we discuss what goes into a typical license
+  and describe some of the most commonly used ones, including which
+  type of projects they are best for. Which license is best for
+  your project depends on your reasons for choosing to do
+  open-source development. Chapter 7 includes a section on <a href=
+  "IHE-62.html#32094">Choosing a License</a> that presents a list
+  of questions to help you pick which license to use.</p>
+
+  <p>Many people equate open source with the various open-source
+  licenses, but the license is only a gate that people pass
+  through. If people are not willing to agree to the terms of the
+  license, then they don't pass through the gate. For those people
+  who do accept, the license doesn't specify how they will work
+  together; it merely defines some very basic ground rules.</p>
+
+  <div id="what-a-license-does">
+    <h2>What a License Does</h2>
+
+    <p>A license grants outside developers certain rights that
+    establish what they can and cannot do with the source code. The
+    licenses we consider here grant the developer the right to use
+    and modify the source code. Some licenses also include the
+    right to use any intellectual property (IP), such as patents,
+    that is embodied in the source code. Most licenses do not grant
+    developers the right to take that IP and use it in a different
+    application.</p>
+
+    <p>Each license also requires developers to assume certain
+    responsibilities. For example, some licenses require that any
+    bug fixes that a developer makes to the source code must be
+    contributed back to the original author. Another common
+    requirement is that any IP used in the source code that a
+    developer contributes must be made available (usually without
+    fee) to other developers who use that code.</p>
+
+    <p>A major area of variation among licenses is what, if
+    anything, the developer must do in order to redistribute
+    executable binaries built from modified versions of the source
+    code. Many open-source licenses require that the modified
+    source code also be made available, at no or nominal cost, to
+    anyone who wants to see and use it--this being the whole point
+    of open source. Some of the Sun-created licenses, SCSL and
+    SISSL, include compatibility requirements in the license.</p>
+
+    <p>Some licenses allow the source code to be incorporated into
+    a <em>larger work</em> that is not subject to the terms of the
+    license, although the original source code that is being
+    included still is; other licenses consider any additions to be
+    extensions of the original program and subject to all of the
+    license terms. This is a key factor to consider if you plan on
+    combining open-source code with proprietary code.</p>
+
+    <p>Finally, all the licenses deal with various legal matters:
+    warranty (typically none), liability (typically limited),
+    termination of the license (if you violate any of its terms),
+    dealing with brands and trademarks (typically not included with
+    the license), and several other boilerplate issues that are
+    also to be found in typical licenses accompanying commercial
+    software (e.g., clauses about governing law, dispute
+    resolution, U.S. government use, international use, and
+    severability).</p>
+  </div>
+
+  <div id="what-a-license-does-not-do">
+    <h2>What a License Does Not Do</h2>
+
+    <p>It is just as important to realize what a license does not
+    do. A license describes certain boundary conditions, but does
+    not speak about how developers will actually work together. It
+    is up to other documents or traditions to describe the process
+    of contributing code, making a new release, and deciding what
+    to do when disagreements arise. The next chapter looks at the
+    day-to-day functioning of a typical open-source project and how
+    to build up a community of users and developers.</p>
+
+    <p>The license may not automatically apply to changes
+    contributed by outside developers. Many open-source projects
+    require people wishing to contribute code to first sign a
+    contributor's agreement before their code is accepted. (This
+    agreement is discussed later in the section <a href=
+    "IHE-49.html#74978">Supplementing the License--Contributor
+    Agreements</a>.)</p>
+
+    <p>One other matter that most licenses do not touch on is how
+    to ensure that modifications to the source code maintain
+    compatibility with established standards. One way this can be
+    done is to require that any distributed code pass a
+    compatibility test in order to be granted the right to use a
+    logo or brand. If there is an established brand, then this can
+    be enough of a carrot for developers to keep things compatible.
+    Most often, compatibility is maintained because the community
+    values it and will not accept code contributions that deviate
+    from the standard--anyone who wants to create an incompatible
+    version is thus forced to fork the code and start a new
+    project.</p>
+  </div>
+
+  <div id="more-on-copyright-...">
+    <h2>More on Copyright ...</h2>
+
+    <p>The author of a piece of software owns the copyright to the
+    code and therefore the right to choose the terms of the
+    license. The copyright owner may license the code to one group
+    under one set of terms and to another group under a different
+    set of terms. For example, the main product of the company
+    Trolltech AS is the Qt library, a toolkit for building
+    graphical user interfaces for applications. Trolltech makes the
+    Qt library available under two very different licenses: the Q
+    Public License (QPL) for use in noncommercial
+    software<sup><a href="#fn2" class="footnoteRef" id="fnref2"
+    name="fnref2">2</a></sup> (used by the KDE open-source project
+    in its work to build a graphical desktop for Linux) and the
+    Professional License for companies wishing to build a
+    commercial product using the Qt library. The QPL version is
+    free. The Professional License version is a commercial product
+    that must be purchased.</p>
+
+    <p>Because the copyright holder determines the license terms,
+    there can be a problem if there are multiple copyright owners.
+    People who make changes or additions to the original source
+    code become the copyright owners for the code they have
+    written, even if it is just one line. When these changes are
+    contributed back to the open-source project, their authors
+    usually license them under the same terms as the original
+    source code; indeed, many of the open-source licenses require
+    this. Many open-source projects will not accept a contribution
+    unless it is released under the same license as the original
+    code--having various pieces of the source code under different,
+    possibly incompatible, licenses would be too confusing and
+    difficult.</p>
+
+    <p>A further problem arises if a project decides that it wants
+    to change the license being used. For example, the Mozilla
+    project is in the process of changing from the MPL to a triple
+    licensing of the source code under either MPL, GPL, or LGPL.
+    However, to make this happen, every person who has contributed
+    any source code, and hence owns the copyright to it, must agree
+    to the change. Just tracking down all of the copyright holders
+    can be a major task, let alone getting them to agree to the
+    proposed licensing changes. Because of this, some open-source
+    projects request, or even demand, that contributors also assign
+    their copyright to either the original author of the code or
+    some agreed-on third party, such as the Free Software
+    Foundation.</p>
+  </div>
+
+  <div id="and-a-quick-word-on-patents">
+    <h2>... And a Quick Word on Patents</h2>
+
+    <p>Everything you know about patents from proprietary software
+    development still applies to the world of open-source projects.
+    Because your code is &quot;published&quot; when it is made
+    available to people working on the project, any international
+    patents required to implement the code need to be applied for
+    beforehand and any U.S. patents need to be filed within 1 year.
+    By contributing the source code to the project before a patent
+    has been applied for, you may be giving up your right to patent
+    the material, and by contributing it to the project without
+    explicit license terms, you may be granting anyone who
+    distributes a product based on the project the right to use
+    your patent without compensation. Depending on the license you
+    use, others may or may not have the right to use the source
+    code, and the patent, in other work.</p>
+
+    <p>It is also possible to make source code freely available,
+    but require people to license your patents from you before they
+    can distribute any software based on the source code. For
+    example, the MPEG4IP project on SourceForge,<sup><a href="#fn3"
+    class="footnoteRef" id="fnref3" name="fnref3">3</a></sup>
+    started by Cisco's Technology Center, provides an end-to-end
+    system to explore MPEG-4 multimedia, but the codecs used by it
+    are subject to patent royalties.</p>
+  </div>
+
+  <div id="the-licenses">
+    <h2>The Licenses</h2>
+
+    <p>As mentioned earlier, there are several dozen different
+    open-source licenses in use today. Of these, only a few are in
+    widespread use. A check of the world's largest open-source
+    software development website, SourceForge,<sup><a href="#fn4"
+    class="footnoteRef" id="fnref4" name="fnref4">4</a></sup> in
+    March 2004 showed that of the over 53,000 open-source projects
+    hosted there that specified a license about 94% used one of
+    only four basic types of licenses. By far the most popular
+    choices are the GPL and the LGPL, used by almost 79% of the
+    SourceForge projects. The Apache, BSD, and MIT family of
+    licenses is next, accounting for over 10%. Just over 2% use the
+    Artistic License. About 2% use the MPL, SPL, or CPL. The
+    remaining 5% of the projects use three dozen other licenses. An
+    almost identical breakdown of license use was found for the
+    over 23,000 projects hosted on freshmeat,<sup><a href="#fn5"
+    class="footnoteRef" id="fnref5" name="fnref5">5</a></sup>
+    another repository of open-source code.</p>
+
+    <p>Before discussing the features and characteristics of these
+    four types of open-source licenses, let us first look at some
+    more-closed options based on proprietary licenses. These
+    licenses allow varying amounts of collaboration but are not
+    open source. We present the proprietary licenses first in order
+    to show the progression from the licenses and contracts
+    familiar to companies, to those common in open-source projects.
+    The spectrum of licenses provides a spectrum of benefits,
+    obligations, and opportunities for companies, and there really
+    is no single perfect place on this spectrum for all projects.
+    Each project has its own business requirements. Successful
+    gated communities, for example, have been established and
+    provided good value for companies, even though some open-source
+    pundits have criticized them. Such criticism reflects the fact
+    that, to some, open source is a political movement, while to
+    others, it is primarily a business decision.</p>
+
+    <p><em>Note:</em> This section is only an overview of the
+    various licenses--for the real details you need to read the
+    licenses themselves. The full text of each license discussed is
+    included in Appendix B. Also please see the section
+    <sup><a href="#fn6" class="footnoteRef" id="fnref6" name=
+    "fnref6">6</a></sup></p>
+  </div>
+
+  <div id="sun-community-source-license-scsl">
+    <h2>Sun Community Source License (SCSL)</h2>
+
+    <p>The Sun Community Source License (SCSL) was created by Sun
+    in late 1998 in an attempt to combine the best of proprietary
+    and open-source development. When the SCSL was written, many
+    people at Sun were familiar with open source but were worried
+    that releasing technologies such as Java under an open-source
+    license would allow business competitors to hijack the
+    technology by extending and embracing it--destroying any
+    possibility of the goal to &quot;write once, run
+    anywhere.&quot; Therefore, two major goals of the SCSL were
+    that propriety modifications and extensions (including
+    performance improvements) be allowed, but also that
+    compatibility among deployed versions of the software be
+    required and enforced through testing.</p>
+
+    <p>Research Use basically allows you to do anything to the
+    source code except give it to someone who has not also signed
+    the SCSL. The only requirement is that any bug fixes be
+    provided back to Sun.The SCSL defines two types of use:
+    <em>Research</em> <em>Use</em> and <em>Commercial Use</em> .
+    Research Use means that the source code is to be used only for
+    research, development, educational, or personal use. Commercial
+    Use is when an executable based on the source code is used or
+    distributed for any direct or indirect commercial or strategic
+    gain or advantage. (The original version of the SCSL also
+    included a third type of use, <em>Internal Deployment Use</em>
+    , which fell between Research and Commercial Use. In the most
+    recent version of the SCSL, Internal Deployment has been merged
+    with Commercial Use.)</p>
+
+    <p>Commercial Use adds a requirement that any code that is
+    distributed must pass a compatibility test as provided in the
+    appropriate Technology Compatibility Kit (TCK). Commercial Use
+    also requires that an organization must sign separate
+    Commercial Use and trademark licenses. Because those licenses
+    may include royalty payments, the SCSL does not meet the
+    definition of an open-source license. The requirement that any
+    distributed code must maintain compatibility has also caused
+    some open-source leaders to reject the SCSL because they see
+    this as limiting what developers can do with the source code.
+    Of course, Sun never claimed that the SCSL was an open-source
+    license--hence, the term <em>community source</em> .</p>
+
+    <p>The SCSL grants the right to use any IP associated with the
+    original source code and requires that a developer who
+    contributes source code must also grant rights to any IP that
+    it requires to other developers who wish to use that code.</p>
+
+    <p>The SCSL was originally developed as a license for Jini, but
+    was then modified to allow it to be used for providing
+    developers access to Java. Because the needs of Java and Jini
+    were different, the resulting common license became more
+    complex. For example, to use the Java TCK requires signing a
+    separate support agreement with Sun.</p>
+
+    <p>The requirements of making the SCSL meet the needs for both
+    Java and Jini, added to the sheer number of issues that the
+    license must cover, resulted in a long and complicated license.
+    Many developers and companies have found this confusing,
+    causing some to refuse to sign the license. A revised version
+    of the SCSL, made available in October 2000, while still
+    complex, is somewhat clearer.</p>
+
+    <p>Work on Java by many companies as part of the Java Community
+    Process (JCP) uses the SCSL as the standard license for all
+    reference implementations and TCKs developed. Although
+    initially Sun was the original contributor for all the Java
+    source code released, now other companies that lead development
+    efforts for new Java APIs are the original contributors for
+    those technologies--they are the ones licensing the new
+    technology and specifying any possible royalties. As Java moves
+    forward, Sun is becoming an equal player with no special
+    privileges.</p>
+
+    <p>The SCSL is intended for projects that are trying to develop
+    an infrastructure technology, where compatibility and
+    interoperability are crucial and where having a strong
+    committed party guiding the development of the technology is
+    seen as a positive factor. Organizations that sign the SCSL are
+    in a second-class role compared to that of the original
+    contributor, and that may limit the type and number of
+    contributions they are willing to make to improve the licensed
+    technology.</p>
+
+    <p>For example, Jini was released under the SCSL in January
+    1999 and has been successful in creating a large community of
+    developers using and enhancing Jini. As of June 2004, there
+    were over 200,000 developers who had downloaded the source
+    code. Many of the companies working with Jini are very happy to
+    let Sun take the lead on developing the core Jini technology
+    while they devote their efforts to Jini-based products.
+    However, they have also been reluctant to contribute
+    enhancements they have made that would be useful to other Jini
+    community members. In March 2005 Sun began relicensing the Jini
+    source code under the Apache License, Version 2.0. This
+    followed a community discussion, led by Sun's Jini team, on
+    what license would be best.</p>
+
+    <p>For a good overview of the ideas behind the SCSL, please see
+    the paper &quot;Sun Community Source License Principles&quot;
+    by Richard P. Gabriel and William N. Joy.<sup><a href="#fn7"
+    class="footnoteRef" id="fnref7" name="fnref7">7</a></sup> A
+    copy of the most recent version of the SCSL as used for Jini
+    can be found on the Sun website.<sup><a href="#fn8" class=
+    "footnoteRef" id="fnref8" name="fnref8">8</a></sup></p>
+  </div>
+
+  <div id="open-standardproprietary-code">
+    <h2>Open Standard/Proprietary Code</h2>
+
+    <p>Not a license per se, this model of collaboration is limited
+    to the joint development of a public standard. Individual
+    organizations then develop their own proprietary code to
+    implement the agreed-on standards, which is pretty much
+    business as usual but it may be all that is required to get the
+    job done. Note that the use of <em>open</em> here means that
+    the details of the standard are available for anyone to use or
+    implement. It does not mean that the process that created the
+    standard was open to anyone.</p>
+
+    <p>An example of this is the public development of the ADA
+    programming language, which was followed by several companies
+    creating proprietary implementations of ADA compilers. Another
+    example is the IEEE 754 floating-point standard, which was
+    openly developed and then implemented in proprietary hardware
+    by various chip manufacturers.</p>
+
+    <p>Here the collaboration is the process of reaching agreement
+    on what the standard should be. Once such a standard exists,
+    proprietary efforts can compete to implement it.</p>
+  </div>
+
+  <div id="sun-industry-standards-source-license-sissl">
+    <h2>Sun Industry Standards Source License (SISSL)</h2>
+
+    <p>The Sun Industry Standards Source License (SISSL) is an
+    open-source license for providing the source code to implement
+    a specified standard, along with the right to use any IP
+    associated with that source code. Developers can use and modify
+    this source code and distribute executables built from it as
+    they wish, but, if they make any modifications that do not
+    comply with the standard, then they must publish the
+    differences and make available a reference implementation under
+    the same terms as the SISSL--forcing anyone attempting to use
+    embrace-and-extend tactics to publicly document their changes.
+    The SISSL is a true open-source license and has been certified
+    as such by the Open Source Initiative.</p>
+
+    <p>Larger works may be created under the SISSL, so it is
+    possible to add proprietary code and not be required to publish
+    it.</p>
+
+    <p>The SISSL does not include any provisions for developers to
+    voluntarily contribute source code back to the community. It is
+    up to individual developers to choose a license under which
+    they want to offer their modifications, if at all.</p>
+
+    <p>Reasons to use the SISSL include developing momentum for a
+    standard and preventing other companies from hijacking the
+    standard with proprietary extensions. If the code is freely
+    available, it is easier for developers to adopt the standard.
+    If they then modify the code to be incompatible with the
+    standard, the SISSL forces them to announce their changes and
+    to publish the modified source code.</p>
+
+    <p>Sun introduced the SISSL in February 2000 when it released
+    the source code for a key component of the Network File System
+    (NFS) protocol--the Transport Independent Remote Procedure Call
+    protocol (TI-RPC). Since then, Sun has also used the SISSL for
+    projects such as OpenOffice (actually under a dual license of
+    SISSL and LGPL) and GridEngine.</p>
+
+    <p>In September 2005 Sun announced that it was retiring the
+    SISSL in support of the Open Source Initiative (OSI) attempts
+    to minimize the number of open source licenses, so as to make
+    the process of choosing a license easier for developers and
+    companies.</p>
+
+    <p>A copy of the SISSL can be found on the OpenOffice
+    website.<sup><a href="#fn9" class="footnoteRef" id="fnref9"
+    name="fnref9">9</a></sup></p>
+  </div>
+
+  <div id=
+  "mozilla-public-license-mpl-sun-public-license-spl-ibm-common-public-license-cpl-and-sun-common-development-and-distribution-license-cddl">
+  <h2>Mozilla Public License (MPL), Sun Public License (SPL), IBM
+  Common Public License (CPL), and Sun Common Development and
+  Distribution License (CDDL)</h2>
+
+    <p>The Mozilla Public License (MPL) was created by Netscape in
+    early 1998 as it prepared to release the Netscape Communicator
+    browser source code. Netscape wanted to allow companies to use
+    the source code to create new proprietary larger works, but at
+    the same time they wanted to ensure that modifications to the
+    existing code would be contributed back to them and the rest of
+    the community. No existing open-source license met those two
+    goals, so they were forced to create a new license.</p>
+
+    <p>The license they wrote was the Netscape Public License
+    (NPL). Working in a true open-source manner, they posted a beta
+    version of the license for public comment. They got plenty of
+    feedback, and based on that they made a number of changes to
+    the license and created a second license, the Mozilla Public
+    License. The two licenses are identical, except that the NPL
+    includes several clauses granting Netscape additional rights
+    such as ownership of the Netscape brand and logo, the right to
+    use code covered by the NPL in other Netscape products without
+    those products falling under the NPL, the right to relicense
+    code covered by the NPL to third parties under terms different
+    from the NPL, and the right to include proprietary third-party
+    code in the Netscape version of the browser. All of the source
+    code released by Netscape on March 31, 1998, was initially
+    under the NPL, whereas all new browser code created by Netscape
+    was to be developed under the MPL. Moreover, all of the NPL
+    code was scheduled to transition to the MPL within 2 years.</p>
+
+    <p>The MPL explicitly grants the right to use any IP associated
+    with the original source code and requires that when developers
+    contribute source code they must also grant rights to any IP
+    that it requires to other developers who wish to use that
+    code.</p>
+
+    <p>Larger works may be created using the MPL, so that it is
+    possible to add proprietary code and not be required to publish
+    it. Note that any changes to files in the original source code
+    are considered modifications that must be made available to the
+    community; they are not considered part of a larger work. This
+    means that, although it is possible to add proprietary modules
+    as part of a larger work, the interfaces in the original code
+    to those modules must be made public.</p>
+
+    <p>The Sun Public License (SPL) is practically identical to the
+    Mozilla Public License (MPL). It merely changes all references
+    to Mozilla to Sun and includes documentation as part of the
+    source code. It is also a true open-source license. IBM's
+    Common Public License (CPL) is similar but slightly
+    shorter.</p>
+
+    <p>In January 2005 Sun announced the Common Development and
+    Distribution License (CDDL), created in partnership with
+    members of the open source community and based upon the MPL.
+    The CDDL is shorter, clearer, has simplified notice
+    requirements, and contains strong protections against patent
+    litigation. The CDDL was also created to be a reusable license
+    that would be attractive to other open source efforts, so that
+    other projects with similar community and licensing goals would
+    not need to create a new license. Sun has used the CDDL for a
+    number of its major open source projects such as
+    OpenSolaris<sup><a href="#fn10" class="footnoteRef" id=
+    "fnref10" name="fnref10">10</a></sup> and Sun's Java System
+    Application Server (the GlassFish project).<sup><a href="#fn11"
+    class="footnoteRef" id="fnref11" name=
+    "fnref11">11</a></sup></p>
+
+    <p>The reason to use the MPL is to create a community of
+    developers who can easily share modifications but who might
+    also want to make proprietary additions to go into products
+    they would sell. For example, Sun released the source code for
+    NetBeans (a Java IDE) under SPL, hoping to create an active
+    community of developers working to improve it but allowing
+    those same developers to sell any proprietary modules they
+    develop.</p>
+
+    <p>A copy of the latest version of the MPL can be found on the
+    Mozilla website,<sup><a href="#fn12" class="footnoteRef" id=
+    "fnref12" name="fnref12">12</a></sup> the SPL is available on
+    the NetBeans website,<sup><a href="#fn13" class="footnoteRef"
+    id="fnref13" name="fnref13">13</a></sup> the CPL can be found
+    on the IBM website,<sup><a href="#fn14" class="footnoteRef" id=
+    "fnref14" name="fnref14">14</a></sup> and the CDDL can be found
+    on the Sun website.<sup><a href="#fn15" class="footnoteRef" id=
+    "fnref15" name="fnref15">15</a></sup></p>
+  </div>
+
+  <div id=
+  "gnu-general-public-license-gpl-and-gnu-lesser-general-public-license-lgpl">
+  <h2>GNU General Public License (GPL) and GNU Lesser General
+  Public License (LGPL)</h2>
+
+    <p>The license most associated with open source is the GNU
+    General Public License (GPL). It was created by Richard
+    Stallman for use by the Free Software Foundation to distribute
+    the source code developed for the GNU project. An early version
+    of the license was first used for GNU Emacs in 1985 and version
+    1.0 of the GPL was published in February 1989. The philosophy
+    behind the license is that, although organizations can sell
+    computer software, the source code should be freely available
+    for developers to learn from and to modify.</p>
+
+    <p>Many people do not realize that the Free Software Foundation
+    actually encourages people to charge as much as they wish or
+    can to redistribute free software.<sup><a href="#fn16" class=
+    "footnoteRef" id="fnref16" name="fnref16">16</a></sup> When
+    Stallman speaks of <em>free software</em> , he is referring to
+    freedom, not price. That is, this is <em>free</em> as in
+    <em>free speech</em> , not <em>free beer</em> --a user is free
+    to run the program, change the program, and redistribute the
+    program with or without changes. The only stipulation on
+    pricing that the GPL makes is that, when a copy of the source
+    code is not distributed with the binaries, anyone who requests
+    the source code can be charged only for the actual cost of
+    making a copy. So it is possible to create or modify a piece of
+    software licensed under the GPL and &quot;sell&quot; it for
+    thousands of dollars, as long as the people who buy it are also
+    given the source code on request. Of course, once they have the
+    source code they in turn can redistribute it to anyone they
+    choose, for whatever price they choose.</p>
+
+    <p>The GPL does not allow larger works to be created from the
+    open-source code base. The source code for any modifications or
+    extensions must also be released under the GPL. This is the
+    famous &quot;viral&quot; nature of the GPL. Developers who
+    contribute code to a GPL project are assured that they will
+    always be able to see the source code to any future extensions;
+    no one will be able to take their code and use it in a
+    proprietary product.</p>
+
+    <p>Some people worry that if they were to include a GPLed
+    program on a CD, that any other programs on the CD would become
+    &quot;infected&quot; and they would need to make the source
+    code for those other programs publicly available. This is not
+    the case: The GPL explicitly states that bundling GPLed code
+    with other programs has no effect on the other programs. It is
+    only when source code released under the GPL is incorporated
+    with other source code, compiled, and distributed that the
+    other source code becomes subject to the GPL. All three steps
+    are required for the GPL to take effect.</p>
+
+    <p>If you use GPLed code in another program, but do not
+    distribute that program, then there is no requirement for you
+    to make your source code available. It is the act of
+    distributing the binary executables that triggers the
+    requirement to publish the source code. Individuals are welcome
+    to modify GPLed code for their own use. When the GPL was
+    written, this made sense because only the developer could use
+    the resulting program if it was not distributed. With the
+    growing number of programs that are used to support websites,
+    this is no longer the case: Installing the program on a website
+    can make it available to millions without actually distributing
+    it. This is an area where the GPL may be modified in the
+    future.</p>
+
+    <p>The GPL ties access to the source code with the right to use
+    any IP in the source code by insisting that any patent
+    associated with contributed code &quot;must be licensed for
+    everyone's free use or not licensed at all.&quot; If a company
+    makes a contribution to a GPL project, it must allow any IP it
+    owns that is in the donated code to be freely used by the
+    members of the project. The GPL states that if a patent license
+    does not permit royalty-free redistribution of the program by
+    all those who receive copies of it, then no one can distribute
+    it. This is &quot;to avoid the danger that redistributors of a
+    free program will individually obtain patent licenses, in
+    effect making the program proprietary.&quot;</p>
+
+    <p>The Free Software Foundation has a second license, the GNU
+    Lesser General Public License (LGPL), which is used for
+    software libraries. Any modifications made to the source code
+    for the library must be made available as with the GPL, but the
+    source code for any program that is only linked with the
+    library does not need to be made available. Thus, a proprietary
+    program can use LGPLed libraries.</p>
+
+    <p>The reason to use the GPL or LGPL is to make sure that any
+    modifications to the original source code remain available and
+    cannot be modified and then used privately in proprietary
+    programs. HP licensed its e-speak technology using both types
+    of license. The common core portions of e-speak were under GPL,
+    so any changes must be shared with all; the libraries were
+    under LGPL, so people could use them freely with proprietary
+    code they wrote to create new e-services. Thus, HP assured that
+    the basic technology was shared, but also encouraged developers
+    to write code for new services.</p>
+
+    <p>Some people and companies have complained that the GPL
+    deprives them of their rights by forcing them to publish any
+    changes they make to code that has been released under the GPL.
+    This is a bogus argument based on major misconceptions about
+    the ideas in the GPL. Instead of depriving people of rights,
+    the GPL grants additional rights to those who choose to accept
+    its conditions. Typically the source code for a proprietary
+    product cannot be viewed, let alone modified or redistributed.
+    The copyright on publicly available source code permits only
+    reading--that is, all other rights are reserved to the
+    copyright holder. The GPL offers developers a
+    &quot;carrot&quot;: If they agree to make available their
+    changes to the licensed software, they are then (and only then)
+    permitted to modify and redistribute the code. No one is forced
+    to accept the license, and anyone who accepts it is granted
+    additional rights in exchange for sharing alike. Those who
+    distort this by complaining about the GPL's limiting them are
+    usually those most protective of their own proprietary work,
+    which they would never even consider sharing.</p>
+
+    <p>Copies of the various GNU licenses can be fo und on the Free
+    Software Foundation website.<sup><a href="#fn17" class=
+    "footnoteRef" id="fnref17" name="fnref17">17</a></sup> The FSF
+    also maintains a FAQ page<sup><a href="#fn18" class=
+    "footnoteRef" id="fnref18" name="fnref18">18</a></sup> that
+    answers many questions about the use of the GPL and LGPL.</p>
+  </div>
+
+  <div id="artistic-license">
+    <h2>Artistic License</h2>
+
+    <p>The Artistic License was created by Larry Wall in 1991 for
+    Perl. An earlier version of Perl was released under the GPL,
+    but Wall felt that the terms were too restrictive and wrote the
+    Artistic License so that Perl could be used in commercial
+    packages. The source code for Perl is currently available under
+    either the GPL or the Artistic License.</p>
+
+    <p>The Artistic License is quite different from the other
+    open-source licenses in the number and scope of the
+    alternatives it offers. Most licenses have very specific
+    intents, for example to encourage or require people who make
+    changes to the source to make those changes available to the
+    original copyright holder and thereby to everyone. The Artistic
+    License basically allows you to do anything you want as long as
+    either you publish your changes to the source code along with a
+    description of them or you rename your executables and document
+    the differences--thus giving the original author artistic
+    control over it.</p>
+
+    <p>A copy of the Artistic License can be found on the Perl
+    website.<sup><a href="#fn19" class="footnoteRef" id="fnref19"
+    name="fnref19">19</a></sup></p>
+  </div>
+
+  <div id=
+  "apache-berkeley-software-distribution-bsd-and-mit-licenses">
+    <h2>Apache, Berkeley Software Distribution (BSD), And MIT
+    Licenses</h2>
+
+    <p>A number of open-source licenses are variations on the
+    license used by the original Berkeley Software Distribution
+    (BSD) of Unix in June 1989, which is based on simple copyright.
+    Essentially, every file has a copyright notice listing the
+    original author and a requirement that any versions of the
+    source code that are distributed include the original copyright
+    notice. There is also a no-endorsement clause saying that the
+    names of the originators and contributors cannot be used to
+    endorse products derived from the source code. Finally, there
+    is the usual disclaimer of any warranty.</p>
+
+    <p>The original BSD license also included an advertising clause
+    stating that any advertisements for derived products must
+    include a statement saying the product was based on work done
+    by the original contributor. This clause was removed from the
+    BSD license in 1999, but still appears in licenses that were
+    derived from the original BSD license.</p>
+
+    <p>Variants of the BSD license, such as the one used by the
+    Apache Software Foundation, add a clause saying that any
+    derived products cannot use certain terms in the product name
+    without prior permission. Products derived from the Apache
+    source code cannot have the word <em>Apache</em> in their names
+    unless they have permission from the Apache Software
+    Foundation.</p>
+
+    <p>The MIT License was written in 1987 for the release of the X
+    Window System source code; it thus predates the BSD license.
+    The two licenses are equivalent except for the BSD's
+    no-endorsement clause. The MIT License is also sometimes called
+    the X License, the MIT/X License, or the X Window System
+    License.</p>
+
+    <p>There are essentially no requirements on developers working
+    with source code released under a BSD-style license. They can
+    make any modifications they wish and redistribute the results
+    however they choose. There are no incentives in the license to
+    encourage developers to contribute their modifications back to
+    the community.</p>
+
+    <p>The BSD-style license does not include any mention of the
+    right to use the IP in the source code. Just because a company
+    has contributed source code under a BSD-style license does not
+    mean that it has given up its rights to any IP it owns in the
+    donated code. If developers donate code that includes IP they
+    own, then they can require that anyone wishing to use their
+    donation acquire a separate commercial license from them. Most
+    open-source projects would reject such a donation. Likewise, if
+    a company were to claim that some of the project's code
+    infringed on one of its patents, then the response of the
+    open-source project likely would be to remove the offending
+    code and to rewrite it so that it no longer infringed.</p>
+
+    <p>Note that in January 2004 the Apache Software Foundation
+    made major changes to the Apache license that included a new
+    requirement regarding patents. In the new 2.0 license, people
+    making a contribution that includes patents they own must agree
+    to grant a no-cost patent license to the project and its
+    users.</p>
+
+    <p>A copy of the BSD license can be found on the Open Source
+    Initiative website.<sup><a href="#fn20" class="footnoteRef" id=
+    "fnref20" name="fnref20">20</a></sup> A copy of the Apache
+    license can be found at the Apache Software Foundation
+    website.<sup><a href="#fn21" class="footnoteRef" id="fnref21"
+    name="fnref21">21</a></sup> A copy of the X license is included
+    with the latest release of the X Window System.<sup><a href=
+    "#fn22" class="footnoteRef" id="fnref22" name=
+    "fnref22">22</a></sup> The reason to use a BSD-style license is
+    to make the source code as easily available as possible to
+    outside developers, while possibly retaining the right to be
+    credited for the original work. Sun's Project JXTA uses a
+    variant of the Apache version 1.1 license.</p>
+  </div>
+
+  <div id="public-domain">
+    <h2>Public Domain</h2>
+
+    <p>Another choice is to use no license or copyright whatsoever
+    and simply put source code into the public domain. From that
+    point on, in theory, people can essentially do anything they
+    like with the code. However, putting something into the public
+    domain can be difficult because most countries of the world
+    consider a work to be copyrighted automatically at the moment
+    it is created--the author need not do anything special, such as
+    registering the work or including a copyright notice in it. The
+    U.S. copyright law was brought into agreement with this
+    automatic copyright policy with the passing of the Berne
+    Convention Implementation Act of 1988.<sup><a href="#fn23"
+    class="footnoteRef" id="fnref23" name=
+    "fnref23">23</a></sup></p>
+
+    <p>After the copyright expires the work enters the public
+    domain. With today's long copyright terms, this can be a long
+    wait--in the United States it is currently the author's
+    lifetime plus 70 years. One exception to this is that the
+    federal government cannot hold the copyright to any work it
+    develops itself, so all government works enter the public
+    domain immediately. This can also apply to works created by
+    universities or companies that are funded by the government,
+    depending on the contract terms.</p>
+
+    <p>Some folks try to achieve the effect of placing a work in
+    the public domain by including a copyright notice together with
+    a statement saying that people are free to do anything they
+    want with the code. This presents a possible liability issue
+    for the original author, so it is prudent to also include a
+    no-warranty clause, at which point you might as well use the
+    basic BSD license.</p>
+
+    <p>A work can be placed in the public domain by making a
+    copyright-only dedication or public domain certification. This
+    is an overt declaration that certifies that the declarer owns
+    all copyrights in the work and is relinquishing all rights
+    under copyright law. Such a dedication should be witnessed and
+    recorded by a third party as evidence of the relinquishment.
+    The Creative Commons offers such a service and dedication
+    language at their website.<sup><a href="#fn24" class=
+    "footnoteRef" id="fnref24" name="fnref24">24</a></sup></p>
+
+    <p>You may want to make source code public domain if you had no
+    plans for any further work on it. An example is end-of-life
+    code that you are essentially dumping on the chance that it may
+    be useful to someone, somewhere. Another example is sample code
+    that you provide to help people get started using some
+    technology.</p>
+
+    <p>A summary of licenses is provided in Table 5.1.</p>
+
+    <p>Proprietary</p>
+
+    <p>SCSL</p>
+
+    <p>SISSL</p>
+
+    <p>MPL, SPL, CPL, CDDL</p>
+
+    <p>GPL</p>
+
+    <p>LGPL</p>
+
+    <p>Artistic License</p>
+
+    <p>MIT, X, BSD</p>
+
+    <p>Public Domain</p>
+
+    <p>Can be mixed with proprietary software</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>IP used in contributions must be made available to all
+    developers</p>
+
+    <p>X</p>
+
+    <p>1</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>Modifications must be published</p>
+
+    <p>2,3</p>
+
+    <p>4</p>
+
+    <p>5</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>6</p>
+
+    <p>When incorporated into a larger work license covers all of
+    it</p>
+
+    <p>X</p>
+
+    <p>Includes compatibility requirements</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>7</p>
+
+    <p>Original developer has special rights</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>Can redistribute binaries</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>Can redistribute source code</p>
+
+    <p>8</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <p>X</p>
+
+    <div id="table-5.1-summary-of-licences">
+      <h3>TABLE 5.1 Summary of licences</h3>
+
+      <p>Notes:</p>
+
+      <ol style="list-style-type: decimal;">
+        <li>Only if the IP is required by a modification that does
+        not comply with the standard.</li>
+
+        <li>All bug fixes must be published.</li>
+
+        <li>If a modified or new interface specification (API) is
+        shared with any third party, then the API must be published
+        for all to see.</li>
+
+        <li>Only changes that do not comply with the standard must
+        be published.</li>
+
+        <li>Only changes to files containing the original code or
+        community contributions must be published.</li>
+
+        <li>License includes several alternative conditions that if
+        met do not require modifications to be published.</li>
+
+        <li>Under some conditions must give nonstandard executables
+        nonstandard names and clearly document the differences in
+        manual pages, together with instructions on where to get
+        the standard version.</li>
+
+        <li>May be distributed only to those who have signed the
+        SCSL.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div id="dual-licensing">
+    <h2>Dual Licensing</h2>
+
+    <p>Ideally, any two open-source projects should be able to
+    share their source code with each other. However, if the two
+    projects use incompatible licenses, then this may not be
+    possible. For example, code developed for the Linux operating
+    system, which uses the GPL, cannot be used by the Apache web
+    server project because the GPL specifies additional
+    requirements that are incompatible with the Apache license. To
+    avoid this problem, some open-source projects have chosen to
+    make their source code available under a dual-licensing scheme
+    that gives developers a choice as to which license they will be
+    bound by.</p>
+
+    <p>If there are two disjoint developer communities that cannot
+    or will not use the same license, then a dual-licensing scheme
+    to allow both communities to participate can make sense.
+    However, both groups need to benefit. For companies that will
+    not participate under GPL and developers who want to use the
+    code with other GPLed code, only a dual license can bridge the
+    gap. The Mozilla project started with code under a dual license
+    of the Netscape Public License and the Mozilla Public License
+    because Netscape needed to have special access to the code in
+    its proprietary products. Use of the NPL was intended to
+    diminish over time and indeed has done so. Now Mozilla is
+    shifting to a triple license of MPL, GPL, and LGPL in order to
+    work better with other open-source projects that use GPL.</p>
+
+    <p>For OpenOffice, Sun has released the source code under a
+    dual license that allows developers to choose to abide by
+    either the LGPL or the rules of the SISSL. This allows
+    companies that will not touch code under the LGPL to still be
+    able to participate, even though the main community are the
+    developers working under the LGPL.</p>
+
+    <p>It is important that any code sent back to a dual-licensed
+    project be contributed under the same dual-license structure.
+    Individual developers can take the code, modify it, and
+    redistribute it using only one of the licenses, but if they
+    want to have their changes incorporated into the official
+    source code then they must make them available under the same
+    dual license that the project uses. Otherwise, the project
+    would need to keep track of which contributions were made under
+    which license and it would be impossible to combine them; in
+    effect, the project would fork. In OpenOffice, for example, it
+    is important to avoid having some code that can be used only by
+    LGPL developers and other code only by SISSL developers.</p>
+
+    <p>Dual licensing is also used by some companies to allow them
+    to make money from their open-source work. They make the
+    software they develop available under both an open-source
+    license such as the GPL and a commercial license. Open-source
+    developers can choose to use the open-source license, but any
+    companies that wish to incorporate the code in a proprietary
+    product must pay for it under the commercial license. This is
+    the business model used by Trolltech AS for its Qt
+    multiplatform application development framework and by both
+    MySQL AB and Sleepycat Software for their database
+    products.</p>
+  </div>
+
+  <div id="supplementing-the-license--contributor-agreements">
+    <h2>Supplementing the License--Contributor Agreements</h2>
+
+    <p>While the license specifies what rights someone has to use
+    the source code, many open-source projects also require that
+    developers wishing to contribute to the project sign an
+    additional form. Developers must state that they have the right
+    to contribute their source code--that is, that they own it and
+    that it does not belong to someone else. If the developer works
+    for a company, the form has the developer state that the
+    company grants the right to use the contributed code to the
+    project. Note that even developers doing open-source work on
+    their own time might still need to get approval from their
+    employers because employee agreements often specify that the
+    company owns anything employees invent. This is discussed
+    further in the section <a href="IHE-63.html#86271">Getting
+    Approval as an Individual</a> in Chapter 7.</p>
+
+    <p>The form also usually states that the developer grants to
+    the project the right to freely use any patents and third-party
+    IP used by the contributed code.</p>
+
+    <p>Some projects use the form to assign the copyright of the
+    code to the project. Other projects, such as OpenOffice, use a
+    joint copyright assignment so that both the project and the
+    contributor retain full rights to use, modify, and redistribute
+    the copyrighted work.</p>
+
+    <p>Developers usually need to sign the form only the first time
+    they contribute code; the form then applies to any subsequent
+    contributions. Note that requiring developers to sign such a
+    form before accepting their contributions goes beyond the scope
+    of the license. Developers are still free to exercise their
+    rights to the code, but, if they want to participate with the
+    specific project code base, they must sign the form. For
+    example, to have a contribution included in the Sun-maintained
+    OpenOffice project requires a joint copyright assignment. So
+    far, several years after the start of the project, developers
+    have been willing to go along with this. If the additional
+    requirements of the contributor agreement form are not
+    acceptable, then a developer may be motivated to join or create
+    a new project, that is, to fork the project.</p>
+
+    <p>The actual text of contributor agreements for several
+    open-source projects can be found in Appendix C.</p>
+
+    <p>Other project licenses, such as the VTK project license,
+    state that by contributing to the project the outside
+    developers give as a gift to the three copyright holders of VTK
+    their contributed code and intellectual property. This is an
+    implicit contributor agreement.</p>
+  </div>
+
+  <div id="licenses-for-documentation">
+    <h2>Licenses for Documentation</h2>
+
+    <p>An open-source project consists of more than just the source
+    code. There is also associated documentation. Some of this is
+    internal documentation used only by the project's developers
+    that can be covered by the same licensing as the code it
+    describes. Other documentation, however, such as user guides,
+    tutorials, and reference manuals that are intended for
+    widespread distribution, have different licensing needs than
+    the source code, especially if they will be published as
+    books.</p>
+
+    <p>The point of using an open-source model for documentation is
+    both to make it freely available to as many people as possible
+    and to make it as good and up-to-date as possible by having
+    many people write and review it. Both the freedom to distribute
+    a document and the freedom to modify it are essential. Note
+    that there are many documents that can be freely downloaded for
+    personal use but that are protected by copyright and cannot be
+    modified except by the original authors.</p>
+
+    <p>Documentation is different from source code in many
+    important ways. Although both can be downloaded for online use,
+    people often want the convenience of a printed version of
+    documentation, and a commercially published book is usually of
+    better quality than a copy you print for yourself. There are
+    major costs involved in writing and publishing a book, so
+    potential authors and publishers have concerns about how many
+    people will actually buy the book--as opposed to reading it
+    online or printing their own copy--and also about other
+    publishers reprinting the book and selling it. Any
+    documentation license needs to address these concerns. Note
+    that whereas code is usually developed to solve a problem for
+    its writer (&quot;scratch your own itch&quot;), books are
+    written mainly to earn money for the author and to solve the
+    readers' problems.</p>
+
+    <p>There is also the question of the author's reputation. When
+    you read a book, you directly experience the author's words.
+    This is unlike software, where a user never sees the source
+    code, only the effect of running it. Often a book has a single
+    author, and if there are problems because the text has errors
+    or is difficult to read, then the reader will rightly blame the
+    author. Likewise, the reader will give the author credit for
+    clear writing and good information. If anyone can modify the
+    text and distribute a new version, then the author might be
+    blamed for errors someone else introduced, and the author's
+    reputation could suffer. So making sure that any third-party
+    modifications are clearly marked as such may be important to
+    the author.</p>
+
+    <p>Documentation licenses need to specify whether commercial
+    redistribution is permitted, what types of modifications are
+    allowed and how they are to be identified, whether translations
+    are allowed, whether the source text must be made available
+    (and, if so, whether it must be in a nonproprietary format),
+    and how to credit the original author and publisher. Like
+    source licenses, documentation licenses usually specify that
+    there is no warranty and that aggregation with other documents
+    doesn't cause the license to apply to them.</p>
+
+    <p>Some licenses mention good practices for showing common
+    courtesy to authors, such as contacting the authors well before
+    redistributing any large number of copies, to give them a
+    chance to provide an updated version of the document, and
+    offering them a free copy of any published book or CD-ROM.</p>
+  </div>
+
+  <div id="open-publication-license">
+    <h2>Open Publication License</h2>
+
+    <p>One commonly used license is the Open Publication License, a
+    cooperative effort of O'Reilly Publishing, New Riders
+    Publishing, the Open Source Initiative, the OpenContent
+    Project, VA Research, and others, written in 1999. The license
+    was designed to be friendly to commercial publishers, such as
+    O'Reilly and New Riders, who have published several books using
+    the license--the full text of many of these books is available
+    on the publisher's website.</p>
+
+    <p>The license is fairly short. It allows for commercial
+    redistribution and modifications, provided that any
+    modifications are identified and dated, that the original
+    author and publisher are acknowledged, that the location of the
+    original unmodified document be identified, and that the
+    original authors' names not be used to endorse the new work
+    without permission.</p>
+
+    <p>The license has two options that can be specified to
+    prohibit the distribution of substantively modified versions
+    without the explicit permission of the author and to prohibit
+    any publication in book form for commercial purposes unless
+    prior permission has been obtained from the copyright
+    holder.</p>
+
+    <p>Note that an earlier, related license, the Open Content
+    License, is often casually referred to as the &quot;OPL.&quot;
+    So if you see a reference to the OPL you will need to check to
+    see which license it really indicates.</p>
+
+    <p>A copy of the Open Publication License can be found on the
+    OpenContent website.<sup><a href="#fn25" class="footnoteRef"
+    id="fnref25" name="fnref25">25</a></sup></p>
+  </div>
+
+  <div id="gnu-free-documentation-license-fdl">
+    <h2>GNU Free Documentation License (FDL)</h2>
+
+    <p>The GNU Free Documentation License (FDL) is similar to the
+    Open Publication License (with neither option specified), but
+    it specifies everything in much greater detail. The FDL was
+    written in early 2000. It is used by many open-source projects
+    where the source code uses the GPL, such as the GNOME project.
+    A number of books using the FDL have been published
+    commercially.</p>
+
+    <p>The FDL distinguishes between the main technical content of
+    a document and <em>secondary sections</em> that focus on the
+    publisher or author, such as a preface or acknowledgments.
+    These secondary sections can be declared invariant and required
+    to be included in any derived works. Each author can also
+    specify material that must be included on the front or back
+    covers of any derived works.</p>
+
+    <p>People making modifications must add a history section to
+    document their changes. A machine-readable copy of the
+    document, in an accessible (that is, nonproprietary) format,
+    must be made freely available.</p>
+
+    <p>The FDL does not include any warranty or liability
+    disclaimers.</p>
+
+    <p>A copy of the GNU FDL can be found on the Free Software
+    Foundation website.<sup><a href="#fn26" class="footnoteRef" id=
+    "fnref26" name="fnref26">26</a></sup></p>
+  </div>
+
+  <div id="public-documentation-license-pdl">
+    <h2>Public Documentation License (PDL)</h2>
+
+    <p>The Sun Public Documentation License (PDL) is a revision of
+    the Mozilla Public License modified to apply to documentation.
+    It was first used in August 2002 as the license for OpenOffice
+    documentation. It was designed to facilitate revisions to
+    existing documents, requiring that all modifications be
+    documented, but not going into the detail that the FDL
+    requires. It also makes it possible to take pieces from one
+    document and use them in another, provided that reasonable
+    attribution is provided.</p>
+
+    <p>A copy of the PDL can be found on the OpenOffice
+    website.<sup><a href="#fn27" class="footnoteRef" id="fnref27"
+    name="fnref27">27</a></sup></p>
+  </div>
+
+  <div id="freebsd-documentation-license">
+    <h2>FreeBSD Documentation License</h2>
+
+    <p>The FreeBSD Documentation License is just like the BSD
+    license: It allows people to do anything they want with the
+    licensed material as long as they retain the original copyright
+    and disclaimers.</p>
+
+    <p>A copy of the FreeBSD Documentation License can be found on
+    the FreeBSD website.<sup><a href="#fn28" class="footnoteRef"
+    id="fnref28" name="fnref28">28</a></sup></p>
+  </div>
+
+  <div id="creative-commons">
+    <h2>Creative Commons</h2>
+
+    <p>The Creative Commons<sup><a href="#fn29" class="footnoteRef"
+    id="fnref29" name="fnref29">29</a></sup> is an organization
+    &quot;devoted to expanding the range of creative work available
+    for others to build upon and share.&quot; It provides a set of
+    licenses aimed primarily at artists, musicians, photographers,
+    and writers that permits a variety of rights to consumers of
+    the work, such as the right to create, distribute, and perform
+    derivative works. These licenses can be used for documentation
+    and, perhaps with some modifications made in conjunction with
+    the Creative Commons, for software source code.</p>
+
+    <p>The Creative Commons in many ways exemplifies the principles
+    and core values of the open-source community. Its website is a
+    good place to visit to get a feel for how an even balance
+    between the rights of the author and the rights of others can
+    optimize opportunities for innovation.</p>
+  </div>
+
+  <div id="licenses-1">
+    <h2>Licenses</h2>
+
+    <p>Open source is more than just a license and source code in a
+    public place. The success of an open-source project is
+    influenced mainly by how day-to-day matters are handled, not by
+    the choice of license. Open source requires community, culture,
+    shared vision, and a commitment to continuous design. That a
+    project like Apache can succeed based on a minimal BSD-style
+    license that does not even mention collaboration is proof that
+    we need to look beyond the license. But the choice of a license
+    can help set the tone for the project and define its legal
+    boundaries. The license you choose also can determine how code
+    from different contributors can be combined and which are the
+    natural projects for you to collaborate with.</p>
+
+    <p>None of the advice in this chapter should be taken as legal
+    advice. For the definitive meanings of the licenses described
+    here or for help in drafting your own, please engage a
+    lawyer.</p>
+  </div>
+</div>
+
+<div class="footnotes">
+  <hr>
+
+  <ol>
+    <li id="fn1">
+      <p><a href=
+      "http://www.opensource.org">http://www.opensource.org</a>
+      <a href="#fnref1" class="footnoteBackLink" title=
+      "Jump back to footnote 1">&#8617;</a></p>
+    </li>
+
+    <li id="fn2">
+      <p>As of September 2000, the Qt library is also available
+      under the GPL for use by open-source projects. <a href=
+      "#fnref2" class="footnoteBackLink" title=
+      "Jump back to footnote 2">&#8617;</a></p>
+    </li>
+
+    <li id="fn3">
+      <p><a href=
+      "http://mpeg4ip.sourceforge.net">http://mpeg4ip.sourceforge.net</a>
+      <a href="#fnref3" class="footnoteBackLink" title=
+      "Jump back to footnote 3">&#8617;</a></p>
+    </li>
+
+    <li id="fn4">
+      <p><a href=
+      "http://sourceforge.net">http://sourceforge.net</a> <a href=
+      "#fnref4" class="footnoteBackLink" title=
+      "Jump back to footnote 4">&#8617;</a></p>
+    </li>
+
+    <li id="fn5">
+      <p><a href="http://freshmeat.net">http://freshmeat.net</a>
+      <a href="#fnref5" class="footnoteBackLink" title=
+      "Jump back to footnote 5">&#8617;</a></p>
+    </li>
+
+    <li id="fn6">
+      <p><a href=
+      "http://www.microsoft.com/resources/sharedsource/default.mspx">
+      http://www.microsoft.com/resources/sharedsource/default.mspx</a>
+      <a href="#fnref6" class="footnoteBackLink" title=
+      "Jump back to footnote 6">&#8617;</a></p>
+    </li>
+
+    <li id="fn7">
+      <p><a href=
+      "http://www.sun.com/software/communitysource/principles.html">
+      http://www.sun.com/software/communitysource/principles.html</a>
+      <a href="#fnref7" class="footnoteBackLink" title=
+      "Jump back to footnote 7">&#8617;</a></p>
+    </li>
+
+    <li id="fn8">
+      <p><a href=
+      "http://www.sun.com/software/jini/licensing/licenses.htm">http://www.sun.com/software/jini/licensing/licenses.html</a>
+      <a href="#fnref8" class="footnoteBackLink" title=
+      "Jump back to footnote 8">&#8617;</a></p>
+    </li>
+
+    <li id="fn9">
+      <p><a href=
+      "http://www.openoffice.org/licenses/sissl_license.html">http://www.openoffice.org/licenses/sissl_license.html</a>
+      <a href="#fnref9" class="footnoteBackLink" title=
+      "Jump back to footnote 9">&#8617;</a></p>
+    </li>
+
+    <li id="fn10">
+      <p><a href=
+      "http://opensolaris.org/os">http://opensolaris.org/os</a>
+      <a href="#fnref10" class="footnoteBackLink" title=
+      "Jump back to footnote 10">&#8617;</a></p>
+    </li>
+
+    <li id="fn11">
+      <p><a href=
+      "http://community.java.net/java-enterprise">http://community.java.net/java-enterprise</a>
+      <a href="#fnref11" class="footnoteBackLink" title=
+      "Jump back to footnote 11">&#8617;</a></p>
+    </li>
+
+    <li id="fn12">
+      <p><a href=
+      "http://www.mozilla.org/MPL">http://www.mozilla.org/MPL</a>
+      <a href="#fnref12" class="footnoteBackLink" title=
+      "Jump back to footnote 12">&#8617;</a></p>
+    </li>
+
+    <li id="fn13">
+      <p><a href=
+      "http://www.netbeans.org/about/legal/spl.html">http://www.netbeans.org/about/legal/spl.html</a>
+      <a href="#fnref13" class="footnoteBackLink" title=
+      "Jump back to footnote 13">&#8617;</a></p>
+    </li>
+
+    <li id="fn14">
+      <p><a href=
+      "http://www.ibm.com/developerworks/oss/CPLv1.0.html">http://www.ibm.com/developerworks/oss/CPLv1.0.html</a>
+      <a href="#fnref14" class="footnoteBackLink" title=
+      "Jump back to footnote 14">&#8617;</a></p>
+    </li>
+
+    <li id="fn15">
+      <p><a href=
+      "http://www.sun.com/cddl">http://www.sun.com/cddl</a>
+      <a href="#fnref15" class="footnoteBackLink" title=
+      "Jump back to footnote 15">&#8617;</a></p>
+    </li>
+
+    <li id="fn16">
+      <p><a href=
+      "http://www.gnu.org/philosophy/selling.html">http://www.gnu.org/philosophy/selling.html</a>
+      <a href="#fnref16" class="footnoteBackLink" title=
+      "Jump back to footnote 16">&#8617;</a></p>
+    </li>
+
+    <li id="fn17">
+      <p><a href=
+      "http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>
+      (GPL) and <a href=
+      "http://www.gnu.org/copyleft/lesser.html">http://www.gnu.org/copyleft/lesser.html</a>
+      (LGPL). <a href="#fnref17" class="footnoteBackLink" title=
+      "Jump back to footnote 17">&#8617;</a></p>
+    </li>
+
+    <li id="fn18">
+      <p><a href=
+      "http://www.gnu.org/copyleft/gpl-faq.html">http://www.gnu.org/copyleft/gpl-faq.html</a>
+      <a href="#fnref18" class="footnoteBackLink" title=
+      "Jump back to footnote 18">&#8617;</a></p>
+    </li>
+
+    <li id="fn19">
+      <p><a href=
+      "http://www.perl.com/pub/a/language/misc/Artistic.html">http://www.perl.com/pub/a/language/misc/Artistic.html</a>
+      <a href="#fnref19" class="footnoteBackLink" title=
+      "Jump back to footnote 19">&#8617;</a></p>
+    </li>
+
+    <li id="fn20">
+      <p><a href=
+      "http://www.opensource.org/licenses/bsd-license.html">http://www.opensource.org/licenses/bsd-license.html</a>
+      <a href="#fnref20" class="footnoteBackLink" title=
+      "Jump back to footnote 20">&#8617;</a></p>
+    </li>
+
+    <li id="fn21">
+      <p><a href=
+      "http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
+      <a href="#fnref21" class="footnoteBackLink" title=
+      "Jump back to footnote 21">&#8617;</a></p>
+    </li>
+
+    <li id="fn22">
+      <p><a href=
+      "http://freedesktop.org/~org/X11R6.7.0/doc/LICENSE3.html">http://freedesktop.org/~org/X11R6.7.0/doc/LICENSE3.html</a>
+      <a href="#fnref22" class="footnoteBackLink" title=
+      "Jump back to footnote 22">&#8617;</a></p>
+    </li>
+
+    <li id="fn23">
+      <p>In the United States the Judicial Improvements Act of 1990
+      authorized the creation of a national shareware registry, so
+      software copyright owners may donate their software to the
+      public domain by assigning it to the Machine-Readable
+      Collections Reading Room of the Library of Congress. The copy
+      of the public-domain software must contain an explicit
+      disclaimer of copyright protection from the copyright owner
+      [37 Code of Federal Regulations Part 201.26 (1991)]. <a href=
+      "#fnref23" class="footnoteBackLink" title=
+      "Jump back to footnote 23">&#8617;</a></p>
+    </li>
+
+    <li id="fn24">
+      <p><a href=
+      "http://creativecommons.org">http://creativecommons.org</a>
+      <a href="#fnref24" class="footnoteBackLink" title=
+      "Jump back to footnote 24">&#8617;</a></p>
+    </li>
+
+    <li id="fn25">
+      <p><a href=
+      "http://opencontent.org/openpub">http://opencontent.org/openpub</a>
+      <a href="#fnref25" class="footnoteBackLink" title=
+      "Jump back to footnote 25">&#8617;</a></p>
+    </li>
+
+    <li id="fn26">
+      <p><a href=
+      "http://www.gnu.org/licenses/fdl.html">http://www.gnu.org/licenses/fdl.html</a>
+      <a href="#fnref26" class="footnoteBackLink" title=
+      "Jump back to footnote 26">&#8617;</a></p>
+    </li>
+
+    <li id="fn27">
+      <p><a href=
+      "http://www.openoffice.org/licenses/PDL.html">http://www.openoffice.org/licenses/PDL.html</a>
+      <a href="#fnref27" class="footnoteBackLink" title=
+      "Jump back to footnote 27">&#8617;</a></p>
+    </li>
+
+    <li id="fn28">
+      <p><a href=
+      "http://www.freebsd.org/copyright/freebsd-doc-license.html">http://www.freebsd.org/copyright/freebsd-doc-license.html</a>
+      <a href="#fnref28" class="footnoteBackLink" title=
+      "Jump back to footnote 28">&#8617;</a></p>
+    </li>
+
+    <li id="fn29">
+      <p><a href=
+      "http://creativecommons.org">http://creativecommons.org</a>
+      <a href="#fnref29" class="footnoteBackLink" title=
+      "Jump back to footnote 29">&#8617;</a></p>
+    </li>
+  </ol>
+</div>

@@ -82,10 +82,10 @@ sub _assign_id {
             $pos++;
         }
     }
-    elsif( $x->content_list and ! $id_added ) { # No descendants, but content
+    elsif( $x->content_list and ! $id_added ) { # No descendants, but w/content
         my $s = HTML::Element->new('span', id => 's_' . $_[1]++);
-        $s->push_content($x->content_list); # Wrap content with a span element
-        $x->splice_content( 0, 1, $s ); # Then replace original
+        $s->push_content($x->content_list);
+        $x->splice_content( 0, 1, $s );
     }
 }
 
@@ -115,9 +115,11 @@ The strategy is to traverse the content depth-first, adding unique IDs
 as we go:
 
    - The full content is wrapped with a <span> having an object
-     UUID of the content as id (currently a SHA1 of the content)
+     UUID of the content as id (currently a SHA1 of the original content)
    - Elements that don't have an ID get one
    - Elements with an ID keep the one they have
+   - Elements with an ID but only text content get that content wrapped
+     in a <span> tag with an ID
    - Ignorable whitespace CDATA is stripped
    - Content CDATA get a <span> with an ID around it
 

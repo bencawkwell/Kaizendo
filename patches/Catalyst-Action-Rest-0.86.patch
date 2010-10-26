@@ -1,0 +1,18 @@
+diff --git a/lib/Catalyst/Action/Serialize/JSON.pm b/lib/Catalyst/Action/Serialize/JSON.pm
+index cc46199..9c6c090 100644
+--- a/lib/Catalyst/Action/Serialize/JSON.pm
++++ b/lib/Catalyst/Action/Serialize/JSON.pm
+@@ -28,6 +28,13 @@ sub execute {
+                 $controller->{'serialize'}->{'stash_key'} :
+                 $controller->{'stash_key'}
+         ) || 'rest';
++
++    if (my $options = $controller->{json_options}) {
++        foreach my $opt (keys %$options) {
++            $self->encoder->$opt( $options->{$opt} );
++        }
++    }
++
+     my $output = $self->serialize( $c->stash->{$stash_key} );
+     $c->response->output( $output );
+     return 1;

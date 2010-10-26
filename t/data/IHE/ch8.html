@@ -1,0 +1,1064 @@
+<div id="how-to-build-momentum">
+  <h1>8. How To Build Momentum</h1>
+
+  <p>The previous chapters of this book have described all the
+  elements that go into creating and running an open-source
+  project. In this chapter, we discuss some things you can do to
+  increase your project's chances for success. This builds on the
+  material in the section <a href="IHE-55.html#74306">Building a
+  Community</a> in Chapter 6, which covers the basic things to do.
+  The next chapter focuses on what <em>not</em> to do based on
+  lessons learned from the failures and mistakes we've observed in
+  various open-source projects.</p>
+
+  <p>The ideas in this chapter apply to any open-source project;
+  however, we want to emphasize that a company engaging in an
+  open-source project has many additional resources that can be
+  used to further the project in ways that are not available to
+  individual volunteers. In addition to developers, a company also
+  employs technical writers, user-interface experts, graphic
+  artists, website designers, technology evangelists, marketing
+  people, project managers, and people with other skills, all of
+  whom can help with different aspects of the project. Once they
+  understand the open-source process, these folks can make major
+  contributions to help the project become a success. All the
+  activities that your company does to support a proprietary
+  product--marketing, advertising, support, and training--are also
+  needed for an open-source project.</p>
+
+  <p>As you read over this chapter, remember what your business
+  goals are and focus on how to achieve them. Creating a successful
+  open-source project is only part of your strategy. As the project
+  grows and develops, it will take on a life of its own. You need
+  to balance the needs of the open-source community against your
+  business goals. For the most part, they should be aligned toward
+  a common purpose, and developers from both inside and outside of
+  your company will work together to achieve them. Where they are
+  orthogonal, you should let the community proceed on its own. If
+  they are opposed, you need to be very upfront about communicating
+  your plans and reach some agreement that does not alienate or
+  frustrate your community.</p>
+
+  <p>For example, one of the business goals of the NetBeans project
+  was for Sun to sell proprietary modules that added functionality
+  to the basic NetBeans IDE. Developing similar modules as open
+  source in NetBeans would undermine this goal because the
+  functionality would then be available for free. However, outside
+  developers have every right to expect that any useful modules
+  they create can become part of NetBeans. So the decision was made
+  that any module could be developed for NetBeans. It also was
+  decided that when a NetBeans module duplicated the functionality
+  of one of Sun's proprietary modules the Sun version would be open
+  sourced. In this way, the functionality level of NetBeans would
+  continually go up, which would be good for the health of the
+  project. Sun could make this decision because the Sun engineers
+  were confident that they would always be able to develop new
+  proprietary modules that Sun could sell, so they did not need to
+  hold tightly to their existing ones.</p>
+
+  <div id="marketing-your-project">
+    <h2>Marketing Your Project</h2>
+
+    <p>As with any product, marketing plays a key role in the
+    success of your project. For you to be successful, people need
+    to hear about your project, understand what it does, and see
+    how it can help them. Getting the message out about your
+    project is one job marketing can help with.</p>
+  </div>
+
+  <div id="what-is-your-projects-story">
+    <h2>What Is Your Project's Story?</h2>
+
+    <p>Before your project is ever announced to the world, you need
+    to come up with a compelling story that describes what your
+    project is aiming at--something to get people excited about it.
+    This is the message that will attract people to your project
+    both as users and potential developers. If the story is not
+    appealing, then people will not be interested in participating
+    and won't get involved.</p>
+
+    <p>For most open-source projects, this story is focused on the
+    technology being developed. For example, the Apache HTTP Server
+    Project exists to build the best web server. The following are
+    statements of the story for Apache.</p>
+
+    <blockquote>
+      <p>The Apache Project is a collaborative software development
+      effort aimed at creating a robust, commercial-grade,
+      featureful, and freely-available source code implementation
+      of an HTTP (Web) server.<sup><a href="#fn1" class=
+      "footnoteRef" id="fnref1" name="fnref1">1</a></sup></p>
+    </blockquote>
+
+    <blockquote>
+      <p>The goal of this project is to provide a secure, efficient
+      and extensible server which provides HTTP services in sync
+      with the current HTTP standards.<sup><a href="#fn2" class=
+      "footnoteRef" id="fnref2" name="fnref2">2</a></sup></p>
+    </blockquote>
+
+    <p>Other projects have a more user-centered focus, as seen in
+    the following comment about GNOME.</p>
+
+    <blockquote>
+      <p>The GNOME project was born as an effort to create an
+      entirely free desktop environment for free systems. From the
+      start, the main objective of GNOME has been to provide a user
+      friendly suite of applications and an easy-to-use
+      desktop.<sup><a href="#fn3" class="footnoteRef" id="fnref3"
+      name="fnref3">3</a></sup></p>
+    </blockquote>
+
+    <p>You need to determine what sort of people you are hoping to
+    attract to your project. If you want to mainly target
+    end-users, then you need to talk about what they can do with
+    the software you are developing, which of their problems your
+    software solves. If you want to focus on developers who will
+    contribute code to your project, then emphasizing the
+    technological aspects may work, but remember that most people
+    working on open-source projects do so because they need to use
+    the resulting software--your developers will also be users.</p>
+
+    <p>Creating a good story is hard work. The story needs to
+    express the shared purpose behind your project. It will attract
+    people who share this vision and are willing to work to make it
+    real. Moreover, the story should infuse all aspects of the
+    project so that it provides guidance whenever a strategic
+    decision must be made. In literary theory, such a story is
+    called a <em>topos</em> and can be defined as follows:</p>
+
+    <blockquote>
+      <p>a conventionalized expression or passage in text which
+      comes to be used as a resource for the composition of
+      additional texts.<sup><a href="#fn4" class="footnoteRef" id=
+      "fnref4" name="fnref4">4</a></sup></p>
+    </blockquote>
+
+    <p><em>Topos</em> literally means &quot;place&quot; or
+    &quot;location&quot; in Greek, and a topos is a place from
+    which similar stories can be woven. An example from literature
+    is the story of the Garden of Eden. Anyone in a Western
+    Judeo-Christian culture when asked to tell a story about the
+    Garden of Eden will probably come up with a story consistent
+    with the vision of creation the Garden of Eden presents. An
+    example of a technology-related topos is Moore's Law, which is
+    regularly used as the basis of stories about the future of
+    computing.</p>
+
+    <p>For an example of the power of a good story, consider the
+    one developed for the Jini project. As described earlier, Jini
+    technology is a thin layer built on top of Java that allows
+    applications to be written as remote services that can be
+    dynamically deployed and located over a network. The obvious
+    story is that Jini is another middleware framework for
+    distributed applications. But this story has a technology focus
+    that would have severely limited the spread of the Jini
+    message--indeed the term <em>middleware</em> causes even
+    developers to yawn. Instead, the Jini marketing team built a
+    story around what Jini technology would mean to users; that
+    story generated lots of excitement in developers, the press,
+    and the marketplace.</p>
+
+    <p>The Jini topos speaks of a world of &quot;intelligent
+    services&quot; that &quot;simply connect&quot; to form
+    &quot;spontaneous networks&quot; and describes a set of home,
+    office, and automobile scenarios derived from this topos. The
+    concepts &quot;simply connect&quot; and &quot;spontaneous
+    networks&quot; address how people relate to the technology. The
+    Jini topos was highly effective and created a thriving
+    community and associated technology--as hoped--along with
+    thriving E-Speak, UPnP, and SOAP communities and associated
+    technologies.</p>
+
+    <p>This type of story is especially important for any project
+    with ubiquity as a goal. For Jini, success did not rest in
+    extensive development of the core Jini protocols but rather in
+    nurturing communities to create a wide range of Jini-based
+    services. The story needed to inspire companies to want their
+    products--be they printers, cameras, or whatever--to
+    &quot;simply connect&quot; by using Jini technology.</p>
+
+    <p>Contrast this with the Apache topos (described earlier)
+    which speaks of web servers and technology for making them
+    effective. Whereas Jini projects tend to fan out, creating new
+    services for people to use, the Apache Software Foundation's
+    projects tend to focus on adding web server functionality and
+    adopting related technologies such as Java Server Pages,
+    servlets, and XML.</p>
+
+    <p>Topoi and storytelling, however, might not go over well with
+    your highly technical developers. Although the developers at
+    Sun in the Jini group were involved in the story-making, they
+    quickly came to believe that the story was misguided, because
+    it talked exclusively about a world of small devices when in
+    fact Jini was also capable in middleware and other high-end
+    applications, such as distributed and scientific computing.
+    They became upset that Sun was actually not working diligently
+    in the device space and so to them the story was a lie.</p>
+
+    <p>The idea of a topos, however, is that a topos enables people
+    to make their own stories about their own areas of interest. In
+    fact, most middleware application writers had little trouble
+    understanding that &quot;simply connect&quot; and
+    &quot;spontaneous networks&quot; were either literally or
+    metaphorically true for them, although they worried that less
+    sophisticated people might not be able to understand the
+    connection.</p>
+
+    <p>If you decide to build a topos, make sure your developers
+    understand what it's for and buy into the topos you create.</p>
+
+    <p>At its best, the topos as a story-making story attracts and
+    provides room for experimentation and variation beyond what the
+    initiators envisioned.</p>
+  </div>
+
+  <div id="the-name-matters">
+    <h2>The Name Matters</h2>
+
+    <p>What you call your open-source project is important. You
+    need to choose a name that will attract developers. In effect,
+    you are creating a brand identity just like any commercial
+    product. You want to create an identity that matches your
+    target audience and that is consistent with your story. Most
+    important, you don't want a name that is too slick or connected
+    with a commercial product.</p>
+
+    <p>This can be complicated if part of your business plan is to
+    develop a commercial product based on the open-source version.
+    You need to recognize the different naming requirements for
+    each version.</p>
+
+    <p>For example, when Sun was deciding how to name its various
+    Java IDE products, it used the more formal &quot;Forte for
+    Java&quot; name for the Sun-branded versions and the more
+    developer-friendly &quot;NetBeans&quot; name for the
+    open-source version. Keeping the NetBeans name was important
+    for historical reasons, but as a name it does not really
+    describe the project--a Java IDE and more generally a portable
+    tools platform--so another name might have been better.</p>
+  </div>
+
+  <div id="getting-the-message-out">
+    <h2>Getting the Message Out</h2>
+
+    <p>Once you have a good story about your project, you need to
+    tell it to people. This is a traditional role for marketing.
+    When you have a major piece of news, such as when you first
+    announce your project, your company's marketing machine can see
+    to it that the world hears about it. For very important
+    announcements, this can include major stories in the press. For
+    instance, the initial stories about Sun's Jini technology
+    appeared in the <em>New York Times</em> , <em>Business
+    Week,</em> and <em>Wired.</em> When top Sun executives such as
+    Scott McNealy and Bill Joy gave talks or met with the press,
+    they made sure to talk about what was new with Jini, JXTA,
+    NetBeans, OpenOffice, and the other open-source projects Sun
+    was working on. Major stories were also featured on Sun's
+    website, along with links to stories elsewhere on the Web.</p>
+
+    <p>In addition to the big-splash type of announcement, you
+    should also maintain ongoing low-key press coverage. This is
+    essential because there is often a long time between the
+    initial announcement and the final release. You don't want
+    people to think that your project is dead, so be sure to
+    publicize ongoing activities such as community meetings,
+    working group meetings, and significant milestones. These can
+    be as short as a single sentence in a column of industry news
+    in a magazine. Such stories should also be featured on the home
+    page of your project's website. Note that some PR folks are
+    interested only in handling major stories and will balk at the
+    smaller scale needed for ongoing coverage. If they won't do it,
+    then you need to find someone else who will.</p>
+
+    <p>If your project involves infrastructure or something that
+    can be used as part of another application or website, try to
+    find ways to take advantage of the pride some people find in
+    using open-source code or in the technology of your project.
+    Create a logo, a graphic, or a sound that can easily be cut and
+    pasted onto the splash screen of other applications or onto the
+    website of some proud user of your stuff. The logo can link to
+    your website, drawing traffic.</p>
+  </div>
+
+  <div id="going-beyond-standard-marketing">
+    <h2>Going beyond Standard Marketing</h2>
+
+    <p>The conventional marketing channels--major newspapers and
+    magazines, trade press, and trade shows--are important, but an
+    open-source project has other ways to reach potential users and
+    developers, including newsgroups, mailing lists, webzines, and
+    weblogs. Use all of these channels to market your project. You
+    should encourage your developers and users to post to whatever
+    online forums are appropriate.</p>
+
+    <p>It is important to use a different writing style for
+    material sent over these alternative channels. This is a matter
+    of <em>voice.</em> Richard Rhodes, author of <em>The Making of
+    the Atomic Bomb,</em> wrote:</p>
+
+    <blockquote>
+      <p>Every work of writing, no matter how modest, no matter how
+      seemingly &quot;objective,&quot; no matter how
+      &quot;true,&quot; is composed in one or more fictional
+      voices. &quot;Someone&quot; &quot;tells&quot; every story,
+      even the copy on the back of cereal boxes, even a legal
+      contract, even a street sign. We may not pause to puzzle out
+      who &quot;someone&quot; is--the author may not even have
+      thought about her choice of voice in advance--but we register
+      &quot;someone&quot; 's presence and assess his statements
+      accordingly.<sup><a href="#fn5" class="footnoteRef" id=
+      "fnref5" name="fnref5">5</a></sup></p>
+    </blockquote>
+
+    <p>Almost every reader is aware of the voice behind any
+    writing, and so if you want to build a community, you need to
+    make that community feel like a group of people, people with
+    distinct and human voices. Company writing typically tries to
+    appear as neutral as possible, as much like an encyclopedia as
+    possible, so there is little possibility of a reader hearing a
+    voice behind the writing, a voice expressing an opinion. The
+    company in many cases wants the reader to believe that what is
+    written is objectively true. Marketing writing often puts a
+    cheerleading sort of voice behind the words.</p>
+
+    <p>Anything that has a slick marketing feel or inauthentic
+    voice will be rejected and probably will give people a negative
+    view of your project. Avoid hype. What <em>does</em> work is
+    honest talk from developer to developer or user to user. As
+    such, it is the opposite of the typical anonymous marketing
+    message broadcast to a target audience. Instead, it is a
+    message from a real person attempting to engage in an ongoing
+    conversation with other individuals. Each message helps
+    establish the reputation of the writer. Your employees need to
+    become known and respected members of the community in order to
+    best communicate about your project. A big test of their
+    honesty is their being able to admit errors or mistakes and to
+    acknowledge the successes of other projects.</p>
+
+    <p>One last point is that it is very important to give credit
+    to the folks who did the work. If a number of outside
+    developers contributed to your open-source project, be sure to
+    acknowledge their efforts. You may even want to feature their
+    efforts because it shows that the project goes beyond your
+    company.</p>
+  </div>
+
+  <div id="focus-on-your-users-and-contributors">
+    <h2>Focus on Your Users and Contributors</h2>
+
+    <p>One of the most crucial factors in your project's success is
+    releasing a useful product--one that works and solves a real
+    problem. This is exactly the same problem faced by any company
+    releasing a commercial software application. Open source works
+    best with at least several thousand users, so your product must
+    first attract that many. Then the open-source process will
+    encourage those users to provide feedback that will make your
+    project more in tune with the needs of potential users.
+    Remember that one of the main points of doing open source is
+    continuous design, which requires that you pay attention to the
+    continuous feedback you're getting from the community.</p>
+
+    <p>If you have such a large code base that you plan on
+    releasing it in several installments in order to give you time
+    to scrub it, then make sure that the first release can build a
+    complete and useful product. Try to release the parts that are
+    most valuable to users and developers first. As you release
+    subsequent pieces, additional news stories about your project
+    will be generated.</p>
+  </div>
+
+  <div id="target-your-potential-audience">
+    <h2>Target Your Potential Audience</h2>
+
+    <p>As with any product, you need to identify what sort of
+    person will benefit from using your product. You need to make
+    sure your message reaches those people. This is where you can
+    make use of standard marketing and advertising.</p>
+
+    <p>You also should target other companies that will benefit
+    either from using your product directly or using it to add
+    value to their customers. For example, any company doing Java
+    development can use NetBeans to increase the productivity of
+    its programmers. Other companies create commercial products
+    that run on top of NetBeans. In both cases, companies have an
+    incentive to assign their own developers to work on NetBeans to
+    add features they need, and indeed a number of companies have
+    already done so. For any open-source project, companies provide
+    a good source of potential developers.</p>
+  </div>
+
+  <div id="make-users-successful">
+    <h2>Make Users Successful</h2>
+
+    <p>Installing and learning to use a piece of new software is
+    always a major hurdle for people. As discussed in <sup><a href=
+    "#fn6" class="footnoteRef" id="fnref6" name=
+    "fnref6">6</a></sup> and GNOME.<sup><a href="#fn7" class=
+    "footnoteRef" id="fnref7" name="fnref7">7</a></sup></p>
+
+    <p>You may want to have a separate area for each different
+    category of visitors. This might be as minimal as having
+    additional sections in your FAQs, or you might have multiple
+    web pages with specialized documents for each group. For
+    example the OpenOffice project<sup><a href="#fn8" class=
+    "footnoteRef" id="fnref8" name="fnref8">8</a></sup> has
+    localized versions of much of its website for speakers of
+    different languages (for example, Czech, French, German, and
+    Japanese), whereas the GNOME project provides separate web
+    pages for users and for application developers.</p>
+
+    <p>Another question you must address is how much visitors can
+    participate. Can they browse mail archives, subscribe to
+    mailing lists, post to mailing lists, add comments to
+    discussion forums, or edit wiki pages? Generally, you want to
+    maximize how much information visitors can see on your website
+    and minimize barriers to entry. However, you also need to worry
+    about possible disruptions of conversations; furthermore your
+    community members may not want to discuss controversial topics
+    in public.</p>
+
+    <p>Although many visitors will be new to your project and may
+    need help navigating your website, others will be quite
+    knowledgeable about your project--they may visit your project's
+    website frequently to see what's new. Do not assume that all
+    the people who care about your project get their news via the
+    mailing lists; feature news about your project on the home page
+    and update it frequently.</p>
+
+    <p>The definition of <em>visitor</em> is someone without a
+    community identity, so any participation visitors do is done
+    anonymously. It is not necessary to encourage your visitors to
+    join. However, you should make clear what the benefits and
+    requirements of membership are. The main reason people join an
+    online community is to do something that requires membership.
+    For an open-source project, that something is typically being
+    able to ask questions in order to get help in using the
+    project's code and participating in the discussion of the
+    project's future.</p>
+
+    <div id="welcome-your-novices">
+      <h3>Welcome Your Novices</h3>
+
+      <p>Novices are people who have taken the step to join your
+      project. They may have registered on your project's website
+      or maybe just subscribed to one of your project's mailing
+      lists. They are interested in your project, but need to learn
+      the ropes about how your community functions. They need to
+      learn what they can do as members and how to behave.</p>
+
+      <p>When they join, you need to welcome them into your
+      community. A simple way to do this is by sending a welcoming
+      email message. This note should be from a real person, even
+      if it is sent automatically from the mailing list server.
+      Have either the project's founder or your community manager
+      write this welcoming message. It should confirm the novice's
+      membership and explain how the community works. You shouldn't
+      overload new members with information but rather provide
+      links to what they are likely to need to know as they get
+      started working on your project.</p>
+
+      <p>On your website, you should help novices learn who's who
+      in your community. Include a page listing the major
+      contributors, community leaders, and module owners. If you
+      can include pictures of folks, all the better. Introduce
+      novices to your regulars and leaders at community
+      meetings.</p>
+
+      <p>Depending on your project, you may want to have a special
+      mailing list, discussion forum, or even a subproject for
+      newcomers to get their initial questions answered. This can
+      keep the same basic questions from constantly being posted to
+      your main mailing lists. It lets novices help each other,
+      which sets a good tone for later. This is another reason to
+      have good FAQ lists and to regularly link to them in the
+      major mailing lists.</p>
+
+      <p>Be sure to encourage a friendly attitude that is tolerant
+      of inappropriate postings by novices on project mailing
+      lists. Gently let the offenders know how your project does
+      things, without personally attacking them. Redirect
+      inappropriate messages to the correct mailing list.
+      Discourage flaming. This attitude encourages novices to
+      participate and is good for your community of regulars
+      too.</p>
+    </div>
+
+    <div id="reward-your-regulars">
+      <h3>Reward Your Regulars</h3>
+
+      <p>Regulars are the lifeblood of your project; they are the
+      folks who do the work to make your project a success. They
+      answer questions on the mailing lists, report bugs and bug
+      fixes, contribute code and new ideas, tell others about your
+      project, and do all the other work necessary for your project
+      to move forward. Do everything you can to encourage your
+      regulars to participate and to retain their interest in your
+      project.</p>
+
+      <p>Because many open-source projects are meritocracies, be
+      sure to recognize people doing good work. Be sure to add them
+      to the project's list of contributors. Reward them by
+      granting them CVS commit privileges. Invite them to be part
+      of the core group. Encourage them to take responsibility for
+      part of the design or a module of code.</p>
+
+      <p>A good way to show appreciation for the work your regulars
+      do is to have a spotlight feature on your website's home page
+      or in your project's newsletter that highlights individuals
+      and their work. You can also encourage them to give a
+      presentation at a community meeting. Not only does it reward
+      them directly, but it also can educate your community about
+      new functionality and encourage other regulars and novices by
+      giving them an example of what your community values.</p>
+
+      <p>Another way to show that you value your regulars is to use
+      resources from your company to further refine one of their
+      contributions to help bring it up to project-quality
+      standards, as described earlier. Even having one of your
+      graphic artists create a cool logo for a subproject may be
+      appreciated. Just be sure they feel you are working with them
+      and not trying to take over from them.</p>
+
+      <p>The ultimate way to retain your best regulars is to hire
+      them! It is always hard to find top talent and especially to
+      know how they will function in your company's culture. With
+      open source, you have a way to try out people and determine
+      whether they fit in with your current team. Even if they do
+      not live near any of your company's offices you already know
+      that they can work productively from wherever they do live
+      (that is, remotely). For example, Sun Labs is supporting a
+      small open-source project called Electric, a computer-aided
+      design system for electrical circuits. When one volunteer
+      really distinguished himself by his contributions, Sun hired
+      him--even though he lives in Moscow and the Sun Labs team is
+      in California.</p>
+    </div>
+
+    <div id="empower-your-leaders">
+      <h3>Empower Your Leaders</h3>
+
+      <p>Your leaders are the people who keep your community
+      running. Some will be outside volunteers and some will be
+      your employees--a successful project will have a healthy mix
+      of both. Some will have formal leadership roles, such as
+      module owner, but many roles will be more informal. For an
+      open-source project, leadership is all about having a vision
+      and working with others to make it happen; it's not about
+      being in charge, making decisions, or giving orders.</p>
+
+      <p>The leaders in your community will naturally take on many
+      different roles:</p>
+
+      <ul>
+        <li>Welcoming newcomers to the project and answering their
+        questions.</li>
+
+        <li>Answering technical and procedural questions on your
+        project mailing lists.</li>
+
+        <li>Guiding discussions to help them reach a
+        conclusion.</li>
+
+        <li>Selecting high-quality content to highlight on your
+        website or in your newsletter.</li>
+
+        <li>Coordinating activities such as releases, community
+        meetings, or trade-show demos.</li>
+
+        <li>Providing quality checks on contributed code.</li>
+
+        <li>Policing community discussions to keep them civil, and
+        redirecting messages to the correct mailing list.</li>
+
+        <li>Resolving conflicts and helping the community to make
+        decisions.</li>
+
+        <li>Solving complex technical problems.</li>
+
+        <li>Creating compelling visions and directions for the
+        project.</li>
+      </ul>
+
+      <p>You need to watch your regulars to see which are starting
+      to assume any of these roles and encourage them to do so. Try
+      to recruit outside volunteers to oversee visible
+      project-related activities such as module owner, release
+      manager, or newsletter editor. Establish as soon as possible
+      that community members do important things.</p>
+
+      <p>Be sure to provide support for new leaders. It may be as
+      simple as your community manager trading some tips via email
+      on guiding discussions or assigning an experienced module
+      owner to mentor a new one. You may want to give all new
+      module owners training on the various tools your project
+      uses. But recognize that volunteers have limited time, so
+      don't push them to act like full-time employees.</p>
+
+      <p>You can reward your leaders and make them more visible by
+      giving them a special place to express their ideas and
+      opinions. This could be a column in the community newsletter
+      or a series of articles on your website--you could encourage
+      them to write weblogs featured on the project's website. If a
+      leader is not interested in writing, then post an interview
+      instead.</p>
+
+      <p>When you have project-related discussions and meetings
+      inside your company, try to invite outside volunteer leaders
+      to participate. Be sure to keep them informed on any
+      decisions you make. All of your project's leaders need to be
+      kept in the loop. You do not want to create an us-versus-them
+      attitude.</p>
+    </div>
+
+    <div id="honor-your-elders">
+      <h3>Honor Your Elders</h3>
+
+      <p>Elders are respected long-time regulars and leaders who
+      are your community's mentors, teachers, and advisors. They
+      provide role models for newcomers and regulars on how to
+      behave properly. They may have stepped down from more active
+      roles such as a leader or contributor, but your community can
+      still benefit from their sharing their knowledge.</p>
+
+      <p>Some projects take no notice of when major contributors
+      move on; at most they may add their names to a list of
+      emeritus contributors and also remove them from the list of
+      active developers. The Apache Software Foundation's projects
+      have a rule that committers who have been inactive for 6
+      months or more may lose their status as committers. Although
+      people can regain their committer status by just requesting
+      it on the project's developer mailing list, the fact that
+      they lost it indicates a certain indifference toward formerly
+      valued community members.</p>
+
+      <p>Try to identify potential elders and encourage them to
+      continue to participate in some way. They may not have time
+      to write code, but perhaps they would like to follow various
+      design discussions--they certainly have the knowledge to do
+      so, including knowledge of your project's history and why
+      previous decisions were made the way they were. If any of
+      your senior developers move on to another project in your
+      company, see whether you can get their new managers to
+      approve their continuing, though perhaps minimal, involvement
+      on your project mailing lists.</p>
+
+      <p>One way to show that you value your elders is to have a
+      special mailing list for them where the community can ask
+      their opinions on important matters that come up. You can
+      also try to solicit their advice on the regular project
+      mailing lists. Include them in activities at your community
+      meetings and interview them on your website or in your
+      newsletter.</p>
+    </div>
+  </div>
+
+  <div id="communication-creates-community">
+    <h2>Communication Creates Community</h2>
+
+    <p>Everyone involved with your project--users, designers,
+    developers, and evangelists--should know what is happening with
+    it. Everyone needs to know what's new and be able to
+    participate in discussions about various project issues, plans,
+    and designs. As is mentioned in the section <sup><a href="#fn9"
+    class="footnoteRef" id="fnref9" name="fnref9">9</a></sup> was
+    established by Ward Cunningham in 1995. Ward originally called
+    it the WikiWikiWeb from the word <em>wiki</em> <em>wiki</em> ,
+    which means &quot;quick&quot; in the Hawaiian language. For
+    another example, check out the Wikipedia,<sup><a href="#fn10"
+    class="footnoteRef" id="fnref10" name="fnref10">10</a></sup>
+    where, in only 3 years, the online community has created an
+    open-content encyclopedia of almost 300,000 entries (as of July
+    2004). Open-source projects have recently begun to use wikis.
+    The Apache Software Foundation has a wiki<sup><a href="#fn11"
+    class="footnoteRef" id="fnref11" name="fnref11">11</a></sup>
+    used by its various projects, and the GNOME project has set up
+    a wiki<sup><a href="#fn12" class="footnoteRef" id="fnref12"
+    name="fnref12">12</a></sup> to provide support.</p>
+
+    <p>Writing in wiki pages consists of either unsigned,
+    deliberately anonymous text that is intended to be community
+    material which others are encouraged to update and improve (for
+    example, a page on the Apache wiki describing how to do log
+    rotation for the James mail/news server) or a series of signed
+    comments where people hold a form of conversation as they try
+    to reach an understanding of the issues involved (for example,
+    a page discussing which Java IDE to use, also on the Apache
+    wiki). Anyone can both reorganize the conversational threads to
+    clarify the material, possibly moving them to new pages, and
+    revise the community material based on the comments made. Over
+    time more and more community-owned text is created expressing
+    the community consensus and the concluded discussions may be
+    removed. Many wikis provide simple version-control mechanisms
+    so that no text is lost, and archiving important versions of a
+    wiki page can make looking at history easy.</p>
+
+    <p>Most wikis have a special <em>RecentChanges</em> page that
+    displays an automatically generated index of all the wiki pages
+    that have been changed recently. Many people check the
+    <em>RecentChanges</em> page frequently to see what is new on
+    the wiki.</p>
+
+    <p>Many people's immediate reaction when they first hear about
+    wiki is that it cannot possibly work. People worry that someone
+    will come along and delete what is there or write random
+    garbage all over pages. This indeed can, and does occasionally,
+    happen, but as soon as the wiki's community members notice the
+    problem, one of them erases the graffiti and restores the
+    page's original contents from the previous archived version.
+    After continually having their &quot;work&quot; removed, the
+    offending individuals usually quickly give up and go
+    elsewhere.</p>
+
+    <p>A more common problem is that no community consensus
+    emerges, possibly because the community is split into opposing
+    viewpoints on some issue. Then it is important that the
+    community try to express each of the viewpoints rather than
+    resolving the issue to a single &quot;correct&quot; one. This
+    requires a real sense of community and a respect for the
+    beliefs of other community members. The Wikipedia calls this
+    writing with a <em>neutral point of view</em> and has a good
+    description of how to do this.<sup><a href="#fn13" class=
+    "footnoteRef" id="fnref13" name="fnref13">13</a></sup></p>
+
+    <p>Another reason that discussions sometimes do not resolve is
+    that the community is exploring a new area and just doesn't
+    know enough yet. In this case, the discussions remain visible
+    as a reminder that the issue is still open. As individuals and
+    hence the community learn more, people may eventually add to
+    the discussion and reorganize it.</p>
+
+    <p>The wide-open nature of the wiki and most people's
+    unfamiliarity with wikis can present a barrier. People can be
+    afraid of what will happen to what they write or unsure what
+    type of contributions are acceptable. The tone set by the
+    community will either encourage new folks to join in or
+    discourage them from doing so. Once people contribute and begin
+    to edit wiki pages, they gain a feeling of empowerment and
+    often develop a vested interest in overseeing the wiki as a
+    whole.</p>
+
+    <p>A wiki is a community effort and each develops its own
+    culture. In general, the sense of working together to build a
+    better understanding seems to encourage people to be more
+    polite than many other Internet activities do--perhaps because
+    on a wiki any flames, spam, and trivia can be easily deleted,
+    while the constructive comments typically expand and grow.</p>
+
+    <p>Coming to a common place, sharing a vocabulary, and working
+    together over time on common goals all help to make the people
+    using a wiki into an actual community.</p>
+
+    <p>For more information on wikis, see the book <em>The Wiki
+    Way: Collaboration and Sharing on the Internet</em> by Bo Leuf
+    and Ward Cunningham.</p>
+
+    <div id="weblogs-or-blogs">
+      <h3>Weblogs or Blogs</h3>
+
+      <p>A weblog (also known by its contraction, &quot;blog&quot;)
+      is an online journal with entries on whatever topic or topics
+      interest the author, usually including links to online
+      articles, news, or other blogs. Blogs enable people without
+      much web experience to create, format, and post diarylike
+      entries with ease. Blogs are a great way for an individual to
+      have a place to express opinions.</p>
+
+      <p>We have discussed mostly communities built up by
+      collaboration, but the blog focuses on the individual.
+      Helping to create a strong individual identity also helps to
+      build community--community is about getting to know the
+      individual members in the community better over time,
+      something that blogs help to do. They also help to bridge the
+      gaps among multiple communities that the blogger is a member
+      of. Many people who write blogs include a list of links to
+      other blogs that they read. This <em>blogroll</em> helps to
+      define the blogging community that a person identifies
+      with.</p>
+
+      <p>A good way for an open-source project to make use of blogs
+      is to have a news page that displays the latest blog entries
+      from selected community members or a project group blog. Most
+      blogs provide an RSS (<em>Rich Site Summary</em> or
+      <em>Really Simple Syndication</em> ) feed that other web
+      pages can subscribe to. Using this RSS feed, a project can
+      feature on its home page headlines for the most recent
+      relevant blog entries.</p>
+
+      <p>Having key people in your project write a blog (called
+      &quot;blogging&quot;) is another channel for getting
+      important information to your community; it is also a good
+      way to reach people outside of your community who are
+      interested in your project. Anyone can subscribe to the RSS
+      feeds from your blogs and thus get timely updated news
+      concerning your project.</p>
+
+      <p>A good book on how to write a blog is <em>The Weblog
+      Handbook: Practical Advice on Creating and Maintaining Your
+      Blog</em> by Rebecca Blood.</p>
+    </div>
+  </div>
+
+  <div id="community-outreach">
+    <h2>Community Outreach</h2>
+
+    <p>Your project does not exist in a vacuum. Strengthen your
+    connections with other open-source projects. Do this to be a
+    good citizen and because it will benefit your project. If your
+    software engineers establish good reputations with the
+    open-source community it will benefit your company.</p>
+
+    <p>Being active in the larger world of open source will help
+    you with your open-source project. Your project infrastructure
+    undoubtedly will use many open-source tools such as CVS,
+    Bugzilla, and Perl, so you may want to become involved in the
+    debates about their future development. Seeing how other
+    projects are run will give you ideas about what your project
+    should or should not do.</p>
+
+    <p>Market your project to other open-source efforts. These
+    provide a natural audience for the software you develop and are
+    a source of potential contributors. For example, if you create
+    an application that runs on Linux, then you should work with
+    groups creating Linux distributions so that your application
+    will be included--OpenOffice is part of the Linux distributions
+    from RedHat, SuSE, and Mandrake.</p>
+  </div>
+
+  <div id="establishing-credibility-with-the-open-source-crowd">
+    <h2>Establishing Credibility with the Open-Source Crowd</h2>
+
+    <p>Beyond the day-to-day activities of your project, there are
+    some other things you can do to establish better credibility
+    with the larger open-source community. The bigger and more
+    visible your project is, the more important it is for people
+    working on other open-source projects to see you as being part
+    of this larger open-source community.</p>
+
+    <p>First, it will help if you are using a license that has been
+    blessed by the more well-known spokespeople for open source,
+    such as Richard Stallman, Tim O'Reilly, Bruce Perens, and Eric
+    Raymond. If your project uses an OSI-certified open-source
+    license such as BSD, Mozilla, or the GNU GPL, then these
+    spokespeople will be able to go on record as saying your
+    project is true open source and a Good Thing. If your project
+    is using a proprietary or shared source license, they and the
+    press will be sure to point out that your project is not open
+    source. This issue arose with Sun's Jini project, which uses
+    the Sun Community Source License (SCSL)--even though Sun was
+    quite clear in stating that it was creating a gated community
+    and not trying to do true open source, the press and some
+    open-source pundits kept saying, &quot;Yes, but it's not open
+    source.&quot; This deflected attention from the Jini technology
+    and slowed down the growth of the project around it.</p>
+
+    <p>Second, you should establish strong, positive connections
+    with other open-source projects. If your project uses tools or
+    modules developed by other open-source projects or your project
+    produces tools or modules that other open-source projects could
+    benefit from, then not only should you be involved with these
+    other projects, but you should try to entwine their projects
+    and yours as much as possible. An ideal situation is for your
+    project to be part of the planning process--for future features
+    and the timing of releases--for those other projects. The
+    OpenOffice project started with the intent to integrate its
+    office productivity suite with the GNOME desktop, so it became
+    involved in the GNOME community, contributing code and bug
+    fixes back to the GNOME project. As the collaboration deepened,
+    technologies and components from each project became part of
+    the other, so that OpenOffice can be said to be deeply embedded
+    into GNOME. The more your project is seen as not only
+    supporting but deeply integrated with other open-source
+    efforts, the more your project--and thus your company--will be
+    considered a good member of the larger open-source
+    community.</p>
+
+    <p>You should also establish dialogs with open-source
+    developers not involved with your project. Have your internal
+    developers both read and post to places such as
+    Slashdot.<sup><a href="#fn14" class="footnoteRef" id="fnref14"
+    name="fnref14">14</a></sup> Encourage them to start individual
+    weblogs. The more individuals from your company that people see
+    participating in open-source forums--especially when their
+    email addresses include your company's domain name--the harder
+    it will be for them to see your company as a large faceless
+    corporation. It is fine for your company's developers to
+    express whatever views they have, but they should strive for
+    some restraint and avoid too much flaming. As mentioned in the
+    section on <a href="IHE-53.html#48661">Posting Etiquette</a>
+    (Chapter 6), they need to remember that even though they are
+    posting as individuals, people will read their notes as being
+    your company's official policy. When your company's actions are
+    attacked, they should wait a bit to first give outside people a
+    chance to defend your company--statements from people not
+    employed by your company are more effective than statements
+    from employees. Of course, if the criticism is valid, your
+    developers should immediately acknowledge it and fix
+    things.</p>
+  </div>
+
+  <div id="harvesting-innovation">
+    <h2>Harvesting Innovation</h2>
+
+    <p>If you're trying to do innovation based on your open-source
+    project, then you need to do more than just successfully run
+    the project--you need to harvest what we have called triggers.
+    Harvesting from your community doesn't involve any sort of
+    thievery or unethical behavior--it means simply finding out
+    what your community members are doing; what problems they're
+    having; what books, trends, and technologies they are engaged
+    in; what conferences they attend; and how they are using your
+    open-source software.Harvesting Innovation</p>
+
+    <p>Your community manager can lead the way by being sociable
+    and getting to know the active members of the community. Your
+    developers can also get to know community members. Without
+    being intrusive, you can easily come to find out what kinds of
+    uses your community members are making of your open-source
+    software. Are there problems that seem beyond the scope of the
+    open-source project itself? Are there related problems that
+    could be addressed with other products or add-ons? Are people
+    using your technology clustering in application areas you
+    didn't anticipate? Are they talking about a new technology or
+    reading a new book? Are they working on some particular other
+    open-source projects? Are they upgrading their hardware in a
+    pattern?</p>
+
+    <p>When you hold your community meetings, try to arrange for
+    community members to talk about how they are using the
+    project's technology. Use these opportunities to learn about
+    the people who have come to your technology on their own. And
+    learn about what they are doing with it.</p>
+
+    <p>Get your developers together periodically to share what's
+    been learned and brainstorm new opportunities. Have a variety
+    of people in your company look at the community. When you think
+    you have something, it might turn out that some community
+    members your community manager is friendly with are willing to
+    discuss your ideas.</p>
+
+    <p>The key is just to keep your eyes open--don't pry and don't
+    do official-looking surveys. Simply be aware of what your
+    community is up to, who is in it, and what they share
+    voluntarily about what they are doing and the problems they're
+    having.</p>
+  </div>
+
+  <div id="welcome-the-unexpected">
+    <h2>Welcome the Unexpected</h2>
+
+    <p>One of the strengths of open source is that contributors
+    always surprise you. When someone submits a new module that
+    takes things in a new direction, be willing to devote some
+    resources to making it a bigger success. If some people start
+    using your product in ways you didn't expect, check it out and
+    see whether there's a whole new market waiting for you. Most of
+    all, listen to what your community tells you it wants and
+    needs. You have made an investment of company resources in
+    order to use open source, so be sure to get the greatest
+    possibe return on that investment by harvesting the innovation
+    that your community creates.</p>
+  </div>
+</div>
+
+<div class="footnotes">
+  <hr>
+
+  <ol>
+    <li id="fn1">
+      <p><a href=
+      "http://httpd.apache.org/ABOUT_APACHE.html">http://httpd.apache.org/ABOUT_APACHE.html</a>
+      <a href="#fnref1" class="footnoteBackLink" title=
+      "Jump back to footnote 1">&#8617;</a></p>
+    </li>
+
+    <li id="fn2">
+      <p><a href=
+      "http://httpd.apache.org">http://httpd.apache.org</a>
+      <a href="#fnref2" class="footnoteBackLink" title=
+      "Jump back to footnote 2">&#8617;</a></p>
+    </li>
+
+    <li id="fn3">
+      <p><a href=
+      "http://www.gnome.org/intro/findout.html">http://www.gnome.org/intro/findout.html</a>
+      <a href="#fnref3" class="footnoteBackLink" title=
+      "Jump back to footnote 3">&#8617;</a></p>
+    </li>
+
+    <li id="fn4">
+      <p><em>The New Princeton Encyclopedia of Poetry and
+      Poetics,</em> p. 1294. <a href="#fnref4" class=
+      "footnoteBackLink" title=
+      "Jump back to footnote 4">&#8617;</a></p>
+    </li>
+
+    <li id="fn5">
+      <p>Richard Rhodes, <em>How to Write: Advice and
+      Reflections</em> , p. 36. <a href="#fnref5" class=
+      "footnoteBackLink" title=
+      "Jump back to footnote 5">&#8617;</a></p>
+    </li>
+
+    <li id="fn6">
+      <p><a href=
+      "http://www.mozilla.org">http://www.mozilla.org</a> <a href=
+      "#fnref6" class="footnoteBackLink" title=
+      "Jump back to footnote 6">&#8617;</a></p>
+    </li>
+
+    <li id="fn7">
+      <p><a href="http://www.gnome.org">http://www.gnome.org</a>
+      <a href="#fnref7" class="footnoteBackLink" title=
+      "Jump back to footnote 7">&#8617;</a></p>
+    </li>
+
+    <li id="fn8">
+      <p><a href=
+      "http://www.openoffice.org">http://www.openoffice.org</a>
+      <a href="#fnref8" class="footnoteBackLink" title=
+      "Jump back to footnote 8">&#8617;</a></p>
+    </li>
+
+    <li id="fn9">
+      <p><a href=
+      "http://c2.com/cgi/wiki">http://c2.com/cgi/wiki</a> <a href=
+      "#fnref9" class="footnoteBackLink" title=
+      "Jump back to footnote 9">&#8617;</a></p>
+    </li>
+
+    <li id="fn10">
+      <p><a href=
+      "http://www.wikipedia.org">http://www.wikipedia.org</a>
+      <a href="#fnref10" class="footnoteBackLink" title=
+      "Jump back to footnote 10">&#8617;</a></p>
+    </li>
+
+    <li id="fn11">
+      <p><a href=
+      "http://wiki.apache.org/general">http://wiki.apache.org/general</a>
+      <a href="#fnref11" class="footnoteBackLink" title=
+      "Jump back to footnote 11">&#8617;</a></p>
+    </li>
+
+    <li id="fn12">
+      <p><a href=
+      "http://gnomesupport.org/wiki">http://gnomesupport.org/wiki</a>
+      <a href="#fnref12" class="footnoteBackLink" title=
+      "Jump back to footnote 12">&#8617;</a></p>
+    </li>
+
+    <li id="fn13">
+      <p><a href=
+      "http://en.wikipedia.org/wiki/Neutral_point_of_view">http://en.wikipedia.org/wiki/Neutral_point_of_view</a>
+      <a href="#fnref13" class="footnoteBackLink" title=
+      "Jump back to footnote 13">&#8617;</a></p>
+    </li>
+
+    <li id="fn14">
+      <p><a href="http://slashdot.org">http://slashdot.org</a>
+      <a href="#fnref14" class="footnoteBackLink" title=
+      "Jump back to footnote 14">&#8617;</a></p>
+    </li>
+  </ol>
+</div>

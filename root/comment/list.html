@@ -1,1 +1,26 @@
-in comment/list.html
+[%
+  # Temporary JSON handler, while we're testing
+  USE JSON;
+  json = INSERT sandbox/example_discussion.json;
+  discussion_data = JSON.json_decode(json);
+  discussion = discussion_data.context.thread;
+  discussion_id = discussion_data.context.id;
+  depth = 0;
+%]
+
+[% BLOCK new_discussion %]
+<ol class="discussion depth_[% depth %]">
+  [% FOREACH this_comment = discussion %]
+	<li id="[% this_comment.id %]" class="comment">
+    <a href="[% this_comment.thread_id %]#[% this_comment.id %]">[% this_comment.title %]</a>
+    [% IF this_comment.replies.size; %]
+      [% INCLUDE new_discussion discussion=this_comment.replies depth=depth+1 %]
+    [% END %]
+	</li>
+  [% END %]
+</ol>
+[% END %]
+
+<div class="[% discussion_id %]">
+[% INCLUDE new_discussion discussion=discussion depth=depth %]
+</div>
