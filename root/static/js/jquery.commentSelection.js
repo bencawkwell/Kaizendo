@@ -77,7 +77,7 @@ comments = [
         content     : 'Not me!'
     },
 ];
-classes = {
+highlight_classes = {
     '^1$'           : 'single_comment',
     '^[2-4]$'       : 'few_comments',
     '^[5-9]$'       : 'some_comments',
@@ -250,11 +250,11 @@ function getClasses(comments) {
         }
     );
     var count = comments.length+'';
-    $.each(classes,
-        function(exp,class) {
+    $.each(highlight_classes,
+        function(exp,highlight_class) {
             var regex = new RegExp(exp);
             if(count.match(regex)) {
-                relevant_classes.push(class);
+                relevant_classes.push(highlight_class);
             }
         }
     );
